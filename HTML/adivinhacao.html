@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Jogo de adivinhação</title>
+        <style>
+           h1{
+               text-align: center;
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           body{
+               background-color: blueviolet;
+           }
+        </style>
+    </head>
+    <body>
+      <h1>Jogo de adivinhação de numéros </h1>
+
+        <script>
+            var pula_linha=function(){
+                document.write("<br>");
+            }
+            
+             alert("Você consegue descobrir qual é o numero que eu estou pensando? Você tem 5 tentativas")
+             var numero_aleatório=Math.round(Math.random()*100);
+             var tentativas=5;
+
+             while(tentativas>0){
+             var chute=prompt("Digite um numero: ");
+               if(chute==numero_aleatório){
+                   alert("Parabéns você acertou na "+tentativas+" ° tentativa");
+                   tentativas=0;
+               }
+               else{
+                  alert("Não é esse o número que eu estou pensando"+numero_aleatório);
+                  tentativas--;
+
+                  console.log(tentativas);
+               }
+            }
+               alert("Bom jogo");
+               console.log('O jogo acabou');
+    
+        </script>
+    </body>
+
+</html>
