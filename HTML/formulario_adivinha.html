@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>FORMULÁRIO DE ADIVINHAÇÃO</title>
+        <link rel="STYLESHEET" href="estilo.css">
+    </head>
+    <body name='input'>
+       <h1>Consegue adivinhar em que numero eu estou pensando?</h1>
+       <img src="duvi.jpg">
+       <form>
+          <input type="text" id="numero">
+          <br>
+          <br>
+          <input type="submit" id="validar" value="confirme a sua sugestão">
+
+       </form>
+        
+       <script>
+          var segredo=Math.round(Math.random()*100);
+          var caixa_do_numero= document.getElementById("numero");
+
+         var BotaoClicado=function(){
+            //alert(caixa_do_numero.value); 
+            if(segredo == caixa_do_numero){
+              alert("Parabéns você acertou o numero")
+            }
+            else{
+                alert('Você errou infezlimente');
+            }
+         }
+
+         var BotaoAdi= document.getElementById("validar");
+         BotaoAdi.onclick=BotaoClicado;
+
+       </script>
+    </body>
+</html>

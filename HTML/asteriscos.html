@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Asteriscos</title>
+        <link rel="Stylesheet" href="estilo.css">
+        <!--A partir daqui vou usar o css em outro arquivo-->
+    </head>
+    <body>
+       <h1>Vamos desenhar algumas coisas ! </h1>
+       <script>
+          var pula_linha=function(){
+              document.write('<br>');
+          }
+           for(var linha=0;linha <=25;linha++){
+               for(var coluna=0;coluna<=50;coluna++){
+                   document.write(' * ');
+                  // console.log(' * ');
+               }
+               pula_linha();
+           }
+
+           pula_linha();
+           document.write('---------------Escadinha-----------------');
+           pula_linha();
+           pula_linha();
+
+           for(var linha_es=0;linha_es<=10;linha_es++){
+               for(var linha_col=linha_es;linha_col<=10;linha_col++){
+                   if(linha_es== linha_col){
+                   document.write(' * ');
+                  
+                   }
+                   else{
+                    document.write(' __ ');   
+                   }
+               }
+               pula_linha();
+           }
+
+       </script>
+
+    </body>
+</html>
