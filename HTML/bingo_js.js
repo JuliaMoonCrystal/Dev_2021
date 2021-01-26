@@ -1,6 +1,6 @@
 var cartela=[];
 var chute=[];
-var num_user=document.getElementById('num');
+var num_user=document.getElementById('num').value;
 var acertos=0;
 var erros=0;
 
@@ -16,7 +16,7 @@ var btABingo=function(){
 }
 var numeros=function(){
     for(var y=0;y<6;y++){
-        chute[y]=parseInt(num_user);
+        chute[y]=num_user;
     
       
         console.log(chute[y]);
