@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1>Desenhando com Canvas</h1>
-        <canvas id='tela' width="600" height="600"></canvas>
+        <canvas id='tela' width="1000" height="1000"></canvas>
         
         <script>
             var tela=document.getElementById('tela');
@@ -24,17 +24,21 @@
             c.fillStyle='red';
             c.fillRect(400,0,200,400);
 
-            c.fillStyle='blue';
-            c.beginPath();
-            c.moveTo(300,200);
-            c.lineTo(200,400);
-            c.lineTo(400,400);
-            c.fill();
+           // c.fillStyle='blue';
+           // c.beginPath();
+           // c.moveTo(300,200);
+           // c.lineTo(200,400);
+          //  c.lineTo(400,400);
+          //  c.fill();
 
             c.fillStyle='blue';
             c.beginPath();
             c.arc(300,200,0,2*3.14);
             c.fill();
+
+
+            c.fillStyle='yellow';
+            c.fillRect(0,250,400,200);
 
         </script>
     </body>
