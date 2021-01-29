@@ -1,0 +1,22 @@
+body{
+   background-color:gold;
+   background-image:url();
+   
+}
+img{
+    border-radius: 30%;
+}
+.logo{
+    text-align: center;
+    background-color:white;
+}
+.nome_empresa{
+    text-align: center;
+   
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
