@@ -1,6 +1,7 @@
 body{
-   background-color:gold;
+   background-color:black;
    background-image:url();
+   color: white;
    
 }
 img{
@@ -16,7 +17,9 @@ img{
 }
 h1{
     font-family: 'Times New Roman', Times, serif;
+    color:white;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
