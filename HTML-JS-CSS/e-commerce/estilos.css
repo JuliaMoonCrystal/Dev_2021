@@ -27,8 +27,9 @@ h2{
 }
 .introducao{
     color: black;
-    font-size: larger;
+    font-size: x-large;
     text-align: center;
+    padding: 10px 10px 10px 10px;
 }
 .imagem{
   text-align: center;
