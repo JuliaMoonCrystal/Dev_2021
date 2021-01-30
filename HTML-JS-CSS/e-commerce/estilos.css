@@ -28,10 +28,10 @@ h2{
 .introducao{
     color: black;
     font-size: x-large;
-    text-align: center;
+    text-align: justify;
     padding: 10px 10px 10px 10px;
 }
-.imagem{
+.selo{
   text-align: center;
-  border: 10px solid steelblue;
+  border: 5px solid steelblue;
 }
