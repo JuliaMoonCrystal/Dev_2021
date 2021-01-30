@@ -1,5 +1,5 @@
 body{
-   background-color:black;
+   background-color:goldenrod;
    background-image:url();
    color: white;
    
@@ -13,6 +13,8 @@ img{
 }
 .nome_empresa{
     text-align: left;
+    background-color: gray;
+    border: 15px solid gray;
    
 }
 h1{
@@ -22,4 +24,13 @@ h1{
 h2{
     font-family: 'Times New Roman', Times, serif;
     color: white;
+}
+.introducao{
+    color: black;
+    font-size: larger;
+    text-align: center;
+}
+.imagem{
+  text-align: center;
+  border: 10px solid steelblue;
 }
