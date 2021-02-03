@@ -1,5 +1,5 @@
 body{
-    background-color:burlywood;
+    background-color:black;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -11,16 +11,26 @@ img{
 
 p{
     text-align: justify;
+    color: white;
 }
 
 .sobre{
     text-align: center;
-    background-color: yellowgreen;
-    border: 15px solid yellowgreen;
+    background-color: rgb(205, 68, 50);
+    border: 10px solid rgb(205, 81, 50);
 }
 
 .valores{
     text-align: center;
-    background-color: yellowgreen;
-    border: 10px solid yellowgreen;
+    background-color: rgb(205, 81, 50);
+    border: 10px solid rgb(205, 73, 50);
+}
+
+.coracao{
+    text-align: left;
+
+}
+
+.objetivo{
+    color: white;
 }
