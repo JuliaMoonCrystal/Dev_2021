@@ -6,6 +6,11 @@
     color: crimson;
 }
 
+.menu-opcoes{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .menu-opcoes ul li{
     display: inline;
     margin-left: 20px;
@@ -16,11 +21,16 @@
 }
 
 .sacola{
-    background: url(../e-commerce/sacola.png) no-repeat top right;
+  background: url(../e-commerce/sacola.png) no-repeat top right;
   font-size: 14px;
   padding-right: 35px;
   text-align: right;
   width: 140px;
+  padding-top: 8px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 body {
