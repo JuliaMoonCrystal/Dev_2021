@@ -1,10 +1,26 @@
 body{
-    background-color:whitesmoke;
+    background-color:burlywood;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+img{
+    border-radius: 30%;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
 }
 
 .sobre{
     text-align: center;
     background-color: yellowgreen;
+    border: 15px solid yellowgreen;
+}
+
+.valores{
+    text-align: center;
+    background-color: yellowgreen;
+    border: 10px solid yellowgreen;
 }
