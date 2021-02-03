@@ -16,14 +16,22 @@
 }
 
 .sacola{
-    background: url(../e-commerce/sacola.jpg) no-repeat top right;
-
-    font-size: 14px;
-    padding-right: 35px;
-    text-align: right;
-    width: 140px;
+    background: url(../e-commerce/sacola.png) no-repeat top right;
+  font-size: 14px;
+  padding-right: 35px;
+  text-align: right;
+  width: 140px;
 }
+
 body {
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     }
+
+header{
+    position: relative;
+}    
+.container{
+    margin: 0 auto;
+    width: 940px;
+}    
