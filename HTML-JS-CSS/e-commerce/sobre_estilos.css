@@ -33,4 +33,9 @@ p{
 
 .objetivo{
     color: white;
+    text-align: center;
+}
+
+#texto{
+    text-align: center;
 }
