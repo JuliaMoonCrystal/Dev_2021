@@ -26,6 +26,11 @@ p{
     border: 10px solid rgb(205, 73, 50);
 }
 
+.valores h2 {
+    text-align: center;
+    color: white;
+}
+
 .coracao{
     text-align: left;
 
@@ -39,3 +44,8 @@ p{
 #texto{
     text-align: center;
 }
+
+#valores{
+    text-align: center;
+}
+
