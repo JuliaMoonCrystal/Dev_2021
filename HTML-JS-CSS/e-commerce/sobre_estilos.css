@@ -38,7 +38,6 @@ p{
 
 .coracao{
     text-align: left;
-
 }
 
 .objetivo{
@@ -54,3 +53,10 @@ p{
     text-align: center;
 }
 
+.missao h2 {
+   color: white;
+}
+
+.missao p{
+   text-align: center;
+}
