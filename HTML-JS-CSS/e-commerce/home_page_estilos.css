@@ -50,3 +50,51 @@ header{
 .destaque h2{
     color: red;
 }
+
+.busca,
+.menu-departamento{
+    background-color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamento h2 {
+ margin: 10px;
+}
+
+.menu-departamento li {
+    background-color:black;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+    .menu-departamento a {
+    color: red;
+    text-decoration: none;
+}
+
+.busca input {
+    vertical-align: middle;
+}
+    .busca input[type=search] {
+    width: 170px;
+}
+
+.busca,
+.menu-departamento {
+  float: left;
+}
+.menu-departamento {
+  clear: left;
+}
+
+.destaque {
+    margin-top: 10px;
+}
+.menu-departamento {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
