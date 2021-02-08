@@ -5,3 +5,5 @@ var btEnviar=function(){
 
 var btAux=document.getElementById('enviar');
 btAux.onclick=btEnviar;
+
+var bt=document.getElementById("Limpar");
