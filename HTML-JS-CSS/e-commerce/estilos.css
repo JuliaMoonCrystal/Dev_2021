@@ -35,3 +35,9 @@ h2{
   text-align: center;
   border: 5px solid steelblue;
 }
+
+.lista{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: blue;
+}
