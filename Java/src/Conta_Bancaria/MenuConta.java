@@ -19,6 +19,10 @@ public class MenuConta {
 			  //Criando novos objetos//
 	           operacoes metodos= new operacoes();
 			   Conta conta= new Conta();
+			   
+			   //Valores já determinados para facilitar os testes//
+	           conta.setNumConta(21435674);
+	           conta.setSaldo(5000);
 	           
 	            switch (opc)
 	            {

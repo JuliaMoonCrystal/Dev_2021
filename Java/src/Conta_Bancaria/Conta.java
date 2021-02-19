@@ -19,5 +19,11 @@ public int getNumConta() {
 public void setNumConta(int numConta) {
 	this.numConta = numConta;
 }
+public double getSaldo() {
+	return saldo;
+}
+public void setSaldo(double saldo) {
+	this.saldo = saldo;
+}
   
 }
