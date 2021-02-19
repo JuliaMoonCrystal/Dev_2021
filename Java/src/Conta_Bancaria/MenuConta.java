@@ -15,11 +15,14 @@ public class MenuConta {
 					+"\n2  -Consultar Conta-"  
 			  		+ "\n3 -Pagar Fatura do Cartão- \n4 -Pagar Boleto- \n5 -Recarga de celular- \n6 -Depositar na poupança- "
 			  		+"\n9 -Finalizar consulta"));
-	       
 			  
+			  //Criando novos objetos//
+	           operacoes metodos= new operacoes();
+			   Conta conta= new Conta();
+	           
 	            switch (opc)
 	            {
-//	                  case 1: dados_lista =metodos.Create(dados_lista);
+	                  case 1: conta =metodos.sacar(conta);
 //	                             break;
 //	                  case 2: metodos.Read(dados_lista);
 //	                             break;
