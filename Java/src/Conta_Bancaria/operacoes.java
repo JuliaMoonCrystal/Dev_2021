@@ -66,7 +66,10 @@ public class operacoes {
         double saldo=conta.getSaldo();
         saldo=saldo-valor;        
         conta.setSaldo(saldo);
-       
+        
+        //teste para ver a saida do saldo
+        System.out.println("O seu Saldo atual é: "+conta.getSaldo());
+        
   return conta;
 	  }
 }
