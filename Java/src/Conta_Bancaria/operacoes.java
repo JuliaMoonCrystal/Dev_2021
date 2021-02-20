@@ -72,4 +72,9 @@ public class operacoes {
         
   return conta;
 	  }
+
+	public void consulta(Conta conta) {
+		// TODO Auto-generated method stub
+		
+	}
 }

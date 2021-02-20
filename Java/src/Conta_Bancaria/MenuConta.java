@@ -22,14 +22,14 @@ public class MenuConta {
 			   
 			   //Valores já determinados para facilitar os testes//
 	           conta.setNumConta(21435674);
-	           conta.setSaldo(5000);
+	           conta.setSaldo(1000);
 	           
 	            switch (opc)
 	            {
 	                  case 1: conta =metodos.sacar(conta);
-//	                             break;
-//	                  case 2: metodos.Read(dados_lista);
-//	                             break;
+	                             break;
+	                  case 2: metodos.consulta(conta);
+	                             break;
 //	                  case 3: dados_lista=metodos.Update(dados_lista);
 //	                             break;
 //	                  case 4: metodos.Delete(dados_lista);
