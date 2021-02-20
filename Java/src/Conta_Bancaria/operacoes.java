@@ -80,14 +80,19 @@ public class operacoes {
 	      "\n  O seu saldo é :"+conta.getSaldo());
 	}
 
-	public Conta PagarBoleto(Conta conta) {
+	public Conta PagarFatura(Conta conta) {
          
 		
 		
 		return null;
 	}
 
-	public Conta RecargaCelular(Conta conta) {
+	public Conta PagarBoleto(Conta conta) {
+
+		return null;
+	}
+
+	public Conta RecaregarCelular(Conta conta) {
 
 		return null;
 	}

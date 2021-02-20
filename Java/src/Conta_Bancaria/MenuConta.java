@@ -32,12 +32,12 @@ public class MenuConta {
 	                             break;
 	                  case 2: metodos.consulta(conta);
 	                             break;
-	                  case 3: conta=metodos.PagarBoleto(conta);
+	                  case 3: conta=metodos.PagarFatura(conta);
 	                             break;
-	                  case 4: conta=metodos.RecargaCelular(conta);
+	                  case 4: conta=metodos.PagarBoleto(conta);
 	                             break;
-//	                  case 5: ordena.Ordena_Selection(vetor);
-//	                             break;
+	                  case 5: conta=metodos.RecaregarCelular(conta);
+	                             break;
 //	                  case 6: ordena.Ordena_Bubble(dados_lista);
 //	                             break;
 //	                  case 7: metodos.Pesquisa(dados_lista);
