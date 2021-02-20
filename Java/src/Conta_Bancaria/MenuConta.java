@@ -10,6 +10,13 @@ public class MenuConta {
 		
 		int opc=0;
 		
+		 Conta conta= new Conta();
+		 
+		 //Valores já determinados para facilitar os testes//
+         conta.setNumConta(21435674);
+         conta.setSaldo(1000);
+         conta.setPoupanca(2500);
+		
 		 do{
 			  opc = Integer.parseInt(JOptionPane.showInputDialog("----------Bem-Vindo----------- \n1 -Sacar da Conta Corrente- "
 					+"\n2  -Consultar Conta-"  
@@ -18,12 +25,7 @@ public class MenuConta {
 			  
 			  //Criando novos objetos//
 	           operacoes metodos= new operacoes();
-			   Conta conta= new Conta();
 			   
-			   //Valores já determinados para facilitar os testes//
-	           conta.setNumConta(21435674);
-	           conta.setSaldo(1000);
-	           
 	            switch (opc)
 	            {
 	                  case 1: conta =metodos.sacar(conta);
