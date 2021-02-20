@@ -89,7 +89,7 @@ public class operacoes {
 
 	public Conta PagarBoleto(Conta conta) {
 
-		return null;
+		return conta;
 	}
 
 	public Conta RecaregarCelular(Conta conta) {
@@ -98,7 +98,8 @@ public class operacoes {
 	}
 
 	public Conta DepositarPoupanca(Conta conta) {
-
+        double valorDepodito;
+        valorDepodito=Double.parseDouble(JOptionPane.showInputDialog("DIGITE O VALOR QUE VAI SER DEPOSITADO"));
 		
 		return null;
 	}
