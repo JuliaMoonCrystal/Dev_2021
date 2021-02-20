@@ -101,6 +101,11 @@ public class operacoes {
         double valorDepodito;
         valorDepodito=Double.parseDouble(JOptionPane.showInputDialog("DIGITE O VALOR QUE VAI SER DEPOSITADO"));
 		
+        //teste para ver as saida de poupança
+        System.out.println("------------ \n"+conta.getPoupanca());
+        conta.setPoupanca(conta.getPoupanca()+valorDepodito);
+        
+        System.out.println("------------ \n"+conta.getPoupanca());
 		return null;
 	}
 	
