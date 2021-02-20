@@ -9,7 +9,7 @@ public class operacoes {
 	public Conta sacar(Conta conta) {
        
 		int opc=0;
-	    opc = Integer.parseInt(JOptionPane.showInputDialog("----------Qual a sua agencia----------- \n1 -Nubank- "
+	    opc = Integer.parseInt(JOptionPane.showInputDialog("----------Qual a sua agência Bancária----------- \n1 -Nubank- "
 					+"\n2  -Itaú-"  
 			  		+ "\n3 -Santander- \n4 -Bradesco- \n5 -Banco do Brasil-"));
 			  		
@@ -101,8 +101,8 @@ public class operacoes {
         double valorDepodito;
         valorDepodito=Double.parseDouble(JOptionPane.showInputDialog("DIGITE O VALOR QUE VAI SER DEPOSITADO"));
 		
-        //teste para ver as saida de poupança
-        System.out.println("------------ \n"+conta.getPoupanca());
+        //teste para ver a saida da poupança
+        
         conta.setPoupanca(conta.getPoupanca()+valorDepodito);
         
         System.out.println("------------ \n"+conta.getPoupanca());
