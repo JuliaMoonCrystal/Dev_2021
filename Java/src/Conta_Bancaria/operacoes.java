@@ -61,13 +61,13 @@ public class operacoes {
       }
         
         
-        //Aqui o valoe sacado é informado//
+        //Aqui o valor sacado é informado//
         double valor=Double.parseDouble(JOptionPane.showInputDialog("Qual o valor há ser sacado?"));
         double saldo=conta.getSaldo();
         saldo=saldo-valor;        
         conta.setSaldo(saldo);
         
-        //teste para ver a saida do saldo
+        //teste para ver a saida do saldo está certa
         System.out.println("O seu Saldo atual é: "+conta.getSaldo());
         
   return conta;
