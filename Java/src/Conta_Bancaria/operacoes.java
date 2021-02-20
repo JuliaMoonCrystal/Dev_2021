@@ -74,7 +74,11 @@ public class operacoes {
 	  }
 
 	public void consulta(Conta conta) {
-		// TODO Auto-generated method stub
+         System.out.println("--------------------"+
+	      "\n  O número da sua conta é :"+conta.getNumConta()+
+	      "\n  A sua agencia é :"+conta.getNome()+
+	      "\n  O seu saldo é :"+conta.getSaldo());
+		
 		
 	}
 }
