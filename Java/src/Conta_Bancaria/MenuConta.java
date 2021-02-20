@@ -30,8 +30,8 @@ public class MenuConta {
 	                             break;
 	                  case 2: metodos.consulta(conta);
 	                             break;
-//	                  case 3: dados_lista=metodos.Update(dados_lista);
-//	                             break;
+	                  case 3: conta=metodos.PagarBoleto(conta);
+	                             break;
 //	                  case 4: metodos.Delete(dados_lista);
 //	                             break;
 //	                  case 5: ordena.Ordena_Selection(vetor);

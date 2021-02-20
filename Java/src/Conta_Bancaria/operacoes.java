@@ -78,7 +78,13 @@ public class operacoes {
 	      "\n  O número da sua conta é :"+conta.getNumConta()+
 	      "\n  A sua agencia é :"+conta.getNome()+
 	      "\n  O seu saldo é :"+conta.getSaldo());
-		
-		
 	}
+
+	public Conta PagarBoleto(Conta conta) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
 }
