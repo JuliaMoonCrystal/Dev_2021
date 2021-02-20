@@ -96,6 +96,12 @@ public class operacoes {
 
 		return null;
 	}
+
+	public Conta DepositarPoupanca(Conta conta) {
+
+		
+		return null;
+	}
 	
 	
 	

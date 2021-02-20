@@ -38,8 +38,8 @@ public class MenuConta {
 	                             break;
 	                  case 5: conta=metodos.RecaregarCelular(conta);
 	                             break;
-//	                  case 6: ordena.Ordena_Bubble(dados_lista);
-//	                             break;
+	                  case 6: conta=metodos.DepositarPoupanca(conta);
+	                             break;
 //	                  case 7: metodos.Pesquisa(dados_lista);
 //	                             break;
 //	                  case 8: hr.insereRegioes(dados_lista);
