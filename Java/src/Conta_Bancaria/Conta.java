@@ -2,8 +2,10 @@ package Conta_Bancaria;
 
 public class Conta {
   private String nome;
+  private double poupanca;
   private int numConta;
   private double saldo;
+  
   
   
   
@@ -24,6 +26,12 @@ public double getSaldo() {
 }
 public void setSaldo(double saldo) {
 	this.saldo = saldo;
+}
+public double getPoupanca() {
+	return poupanca;
+}
+public void setPoupanca(double poupanca) {
+	this.poupanca = poupanca;
 }
   
 }

@@ -32,8 +32,8 @@ public class MenuConta {
 	                             break;
 	                  case 3: conta=metodos.PagarBoleto(conta);
 	                             break;
-//	                  case 4: metodos.Delete(dados_lista);
-//	                             break;
+	                  case 4: conta=metodos.RecargaCelular(conta);
+	                             break;
 //	                  case 5: ordena.Ordena_Selection(vetor);
 //	                             break;
 //	                  case 6: ordena.Ordena_Bubble(dados_lista);
