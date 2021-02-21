@@ -74,7 +74,7 @@ public class operacoes {
 	  }
 
 	public void consulta(Conta conta) {
-         System.out.println("--------------------"+
+         JOptionPane.showMessageDialog(null,"--------------------"+
 	      "\n  O número da sua conta é :"+conta.getNumConta()+
 	      "\n  A sua agencia é :"+conta.getNome()+
 	      "\n  O seu saldo é :"+conta.getSaldo());
@@ -83,8 +83,10 @@ public class operacoes {
 	public Conta PagarFatura(Conta conta) {
          double valorFatura=Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da fatura"));
          
+         
+         System.out.println("-------------\n"+conta.getSaldo());
          conta.setSaldo(conta.getSaldo()-valorFatura);
-		
+         System.out.println("-------------\n"+conta.getSaldo());
 		
 		return null;
 	}
@@ -108,7 +110,7 @@ public class operacoes {
         conta.setPoupanca(conta.getPoupanca()+valorDepodito);
         
         System.out.println("------------ \n"+conta.getPoupanca());
-		return null;
+		return conta;
 	}
 	
 	
