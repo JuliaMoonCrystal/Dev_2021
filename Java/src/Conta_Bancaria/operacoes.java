@@ -77,8 +77,8 @@ public class operacoes {
          JOptionPane.showMessageDialog(null,"--------------------"+
 	      "\n  O número da sua conta é :"+conta.getNumConta()+
 	      "\n  A sua agencia é : "+conta.getNome()+
-	      "\n  O seu saldo atual é de  :"+conta.getSaldo()+
-	      "\n  O valor guardado na poupança é de : "+conta.getPoupanca()+
+	      "\n  O seu saldo atual é de  :"+conta.getSaldo()+" R$ "+
+	      "\n  O valor guardado na poupança é de : "+conta.getPoupanca()+" R$ "+
 	      "\n----------------------");
 	}
 
