@@ -2,12 +2,14 @@ package Conta_Bancaria;
 
 import javax.swing.JOptionPane;
 //AUTORA:Julia
+//Próxima fase será implementar o JAVAFX e griar uma interface de usuário
+
 
 public class MenuConta {
 
 	public static void main(String[] args) {
       //Aqui o usuário vai escolher qual ação vai realizar//
-		
+	  
 		int opc=0;
 		
 		 Conta conta= new Conta();
