@@ -90,16 +90,26 @@ public class operacoes {
          conta.setSaldo(conta.getSaldo()-valorFatura);
          System.out.println("-------------\n"+conta.getSaldo());
 		
-		return null;
+		return conta;
 	}
 
 	public Conta PagarBoleto(Conta conta) {
-
+        double valorBoleto=Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do Boleto"));
+        
+        System.out.println("-------------\n"+conta.getSaldo());
+        conta.setSaldo(conta.getSaldo()-valorBoleto);
+        System.out.println("-------------\n"+conta.getSaldo());
+        
 		return conta;
 	}
 
 	public Conta RecaregarCelular(Conta conta) {
-
+		 double valorRecarga=Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da Recarga"));
+	        
+	        System.out.println("-------------\n"+conta.getSaldo());
+	        conta.setSaldo(conta.getSaldo()-valorRecarga);
+	        System.out.println("-------------\n"+conta.getSaldo());
+	        
 		return conta;
 	}
 
