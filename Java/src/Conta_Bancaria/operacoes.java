@@ -76,8 +76,10 @@ public class operacoes {
 	public void consulta(Conta conta) {
          JOptionPane.showMessageDialog(null,"--------------------"+
 	      "\n  O número da sua conta é :"+conta.getNumConta()+
-	      "\n  A sua agencia é :"+conta.getNome()+
-	      "\n  O seu saldo é :"+conta.getSaldo());
+	      "\n  A sua agencia é : "+conta.getNome()+
+	      "\n  O seu saldo atual é de  :"+conta.getSaldo()+
+	      "\n  O valor guardado na poupança é de : "+conta.getPoupanca()+
+	      "\n----------------------");
 	}
 
 	public Conta PagarFatura(Conta conta) {
@@ -98,7 +100,7 @@ public class operacoes {
 
 	public Conta RecaregarCelular(Conta conta) {
 
-		return null;
+		return conta;
 	}
 
 	public Conta DepositarPoupanca(Conta conta) {
