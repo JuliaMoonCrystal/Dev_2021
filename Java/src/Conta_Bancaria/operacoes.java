@@ -81,7 +81,9 @@ public class operacoes {
 	}
 
 	public Conta PagarFatura(Conta conta) {
+         double valorFatura=Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da fatura"));
          
+         conta.setSaldo(conta.getSaldo()-valorFatura);
 		
 		
 		return null;
