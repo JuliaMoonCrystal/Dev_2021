@@ -2,6 +2,7 @@ package JavaFX;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -20,6 +21,11 @@ public class Login extends Application{
 		
 		PasswordField txtSenha= new PasswordField();
 		txtSenha.setPromptText("Digite a sua senha");
+		
+		Button btnEntrar= new Button("Entrar");
+		Button btnSair=new Button("Sair");
+		
+		pane.getChildren().addAll(txtLogin,txtSenha,btnEntrar,btnSair);
 		
 		Scene cena= new Scene(pane);
 	
