@@ -18,7 +18,7 @@ public class Login extends Application{
 		pane.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100% blue 0%, silver 100%);");
 		
 		Text login=new Text("LOGIN : ");
-		Text senha= new Text("Senha : ");
+		Text senha= new Text("SENHA : ");
 		
 		
 		TextField txtLogin= new TextField();
@@ -30,7 +30,7 @@ public class Login extends Application{
 		Button btnEntrar= new Button("Entrar");
 		Button btnSair=new Button("Sair");
 		
-		pane.getChildren().addAll(txtLogin,login,txtSenha,btnEntrar,btnSair);
+		pane.getChildren().addAll(txtLogin,login,senha,txtSenha,btnEntrar,btnSair);
 		
 		txtLogin.setLayoutX(50);
 		txtLogin.setLayoutY(50);
@@ -38,7 +38,8 @@ public class Login extends Application{
 		login.setLayoutX(5);
 		login.setLayoutY(65);
 		
-		senha.setLayoutX(0);
+		senha.setLayoutX(5);
+		senha.setLayoutY(115);
 		
 		txtSenha.setLayoutX(50);
 		txtSenha.setLayoutY(100);
