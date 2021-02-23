@@ -14,6 +14,7 @@ public class Login extends Application{
 	public void start(Stage stage) throws Exception {
 		AnchorPane pane= new AnchorPane();
 		pane.setPrefSize(500,500);
+		pane.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100% blue 0%, silver 100%);");
 		
 		
 		TextField txtLogin= new TextField();
