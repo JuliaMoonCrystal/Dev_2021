@@ -19,6 +19,7 @@ public class Login extends Application{
 		
 		Text login=new Text("LOGIN : ");
 		Text senha= new Text("SENHA : ");
+		Text titulo=new Text("LOGIN DO USUARIO ");
 		
 		
 		TextField txtLogin= new TextField();
@@ -30,7 +31,10 @@ public class Login extends Application{
 		Button btnEntrar= new Button("Entrar");
 		Button btnSair=new Button("Sair");
 		
-		pane.getChildren().addAll(txtLogin,login,senha,txtSenha,btnEntrar,btnSair);
+		pane.getChildren().addAll(txtLogin,titulo,login,senha,txtSenha,btnEntrar,btnSair);
+		
+		titulo.setLayoutX(200);
+		titulo.setLayoutY(10);
 		
 		txtLogin.setLayoutX(50);
 		txtLogin.setLayoutY(50);
@@ -44,11 +48,11 @@ public class Login extends Application{
 		txtSenha.setLayoutX(50);
 		txtSenha.setLayoutY(100);
 		
-		btnEntrar.setLayoutX(pane.getWidth()-txtLogin.getWidth()/2);
+		btnEntrar.setLayoutX(20);
 		btnEntrar.setLayoutY(150);
 		
-		btnSair.setLayoutX(pane.getWidth()-txtLogin.getWidth()/2);
-		btnSair.setLayoutY(200);
+		btnSair.setLayoutX(80);
+		btnSair.setLayoutY(150);
 		
 		Scene cena= new Scene(pane);
 	
