@@ -57,6 +57,7 @@ public class Login extends Application{
 		Scene cena= new Scene(pane);
 	
 		stage.setScene(cena);
+		stage.setTitle("Login");
 		stage.show();
 	}
 	
