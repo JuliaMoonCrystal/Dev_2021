@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -24,14 +25,20 @@ public class LoginApp extends Application{
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		launch(args);
 	}
 
 	@Override
-	public void start(Stage primaryStage) throws Exception {
-
-		
+	public void start(Stage Stage) throws Exception {
+        initComponent();
+        initListener();
+        initListeners();
+        Scene scene = new Scene(pane);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setTitle("Login");
+        stage.show();
+        initLayout();
 		LoginApp.stage=stage;
 	}
 	
@@ -84,6 +91,7 @@ public class LoginApp extends Application{
 	private void Login() {
 		if(txtLogin.getText().contentEquals("admin") && txtSenha.getText().equals("12345")) {
 			
+			//vai ir para a tela principal
 		}
 		else {
 			JOptionPane.showInternalMessageDialog(null, "Login ou senha inválidos","ERRO",JOptionPane.ERROR_MESSAGE);
