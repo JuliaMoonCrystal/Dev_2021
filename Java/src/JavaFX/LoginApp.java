@@ -1,5 +1,7 @@
 package JavaFX;
 
+import javax.swing.JOptionPane;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -51,6 +53,8 @@ public class LoginApp extends Application{
 		txtLogin.setLayoutY(50);
 	}
 	
+	
+	//ação do botão de sair
 	private void initListener() {
 	 btnSair.setOnAction(new EventHandler<ActionEvent>() {
 		
@@ -65,4 +69,26 @@ public class LoginApp extends Application{
         System.exit(0);
 		
 	}
+	
+	//ação do botão de entrar
+	private void initListeners() {
+		btnLogin.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+		       Login();		
+			}
+		});
+	}
+	
+	private void Login() {
+		if(txtLogin.getText().contentEquals("admin") && txtSenha.getText().equals("12345")) {
+			
+		}
+		else {
+			JOptionPane.showInternalMessageDialog(null, "Login ou senha inválidos","ERRO",JOptionPane.ERROR_MESSAGE);
+		}
+	}
+	
+	
 }
