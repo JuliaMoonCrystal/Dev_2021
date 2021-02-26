@@ -62,7 +62,8 @@ public class Principal extends Application{
 		columnPreco.setCellValueFactory(new PropertyValueFactory<ItensProperty, Double>("preco"));
 		
 		Vitrine v= new Vitrine();
-		v.addProdutos(new Produto("Camiseta Geek",35.00), new Produto("Regata Star Wars",29.90),new Produto("Caneca GOT",40.00));
+		v.addProdutos(new Produto("Camiseta Geek",35.00), new Produto("Regata Star Wars",29.90),new Produto("Caneca GOT",40.00)
+		,new Produto("Action Figure Mother of Dragons",100.90), new Produto("Drogon",80.00));
 		
 		for(Produto p:v.getProdutos())  
 			listItens.add(new ItensProperty(p.getProduto(),p.getPreco()));
@@ -73,7 +74,7 @@ public class Principal extends Application{
 		Scene scene = new Scene(pane);
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.setTitle("Vitrine");
+        stage.setTitle("Vitrine-ADM");
         stage.show();
         
       
