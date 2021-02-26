@@ -59,7 +59,7 @@ public class Principal extends Application{
 		carrinho= new Carrinho();
 		
 		columnProduto.setCellValueFactory(new PropertyValueFactory<ItensProperty, String>("produto"));
-		columnPreco.setCellValueFactory(new PropertyValueFactory<ItensProperty, Double>("preço"));
+		columnPreco.setCellValueFactory(new PropertyValueFactory<ItensProperty, Double>("preco"));
 		
 		Vitrine v= new Vitrine();
 		v.addProdutos(new Produto("Camiseta Geek",35.00), new Produto("Regata Star Wars",29.90),new Produto("Caneca GOT",40.00));
