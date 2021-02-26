@@ -68,9 +68,15 @@ public class LoginApp extends Application{
 			}
 
 			private void logar() {
-                if(txtLogin.getText().equals("admin") && txtSenha.getText().equals("123456")) {
+                if(txtLogin.getText().equals("admin") && txtSenha.getText().equals("123")) {
                 	JOptionPane.showMessageDialog(null, "Login efetuado com sucesso");
-                	//Vai abrir outra tela
+                	try {
+                		new Principal().start(new Stage());
+                	
+                		
+                	}catch (Exception e) {
+                        e.printStackTrace();						
+					}
                 }
                 else {
                 	JOptionPane.showMessageDialog(null, "Login ou senha incorretos","ERRO", JOptionPane.ERROR_MESSAGE);
@@ -86,11 +92,7 @@ public class LoginApp extends Application{
                fecharApp();				
 			}
 		});
-	
-	
 	}
-	
-		
 	protected void fecharApp() {
       System.exit(0);	
 	}
