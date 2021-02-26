@@ -4,19 +4,19 @@ import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class ItensProperty {
-   private SimpleStringProperty produto;
+   private String produto;
    private SimpleDoubleProperty preco;
    
    public ItensProperty(String produto, double preco) {
-	   this.setProduto(new SimpleStringProperty(produto));
+	   this.produto=produto;
 	   this.setPreco(new SimpleDoubleProperty(preco));
    }
 
-public SimpleStringProperty getProduto() {
+public String getProduto() {
 	return produto;
 }
 
-public void setProduto(SimpleStringProperty produto) {
+public void setProduto(String produto) {
 	this.produto = produto;
 }
 
