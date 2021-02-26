@@ -5,11 +5,11 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class ItensProperty {
    private String produto;
-   private SimpleDoubleProperty preco;
+   private double preco;
    
    public ItensProperty(String produto, double preco) {
 	   this.produto=produto;
-	   this.setPreco(new SimpleDoubleProperty(preco));
+	   this.preco=preco;
    }
 
 public String getProduto() {
@@ -20,11 +20,11 @@ public void setProduto(String produto) {
 	this.produto = produto;
 }
 
-public SimpleDoubleProperty getPreco() {
+public double getPreco() {
 	return preco;
 }
 
-public void setPreco(SimpleDoubleProperty preco) {
+public void setPreco(double preco) {
 	this.preco = preco;
 }
 }
