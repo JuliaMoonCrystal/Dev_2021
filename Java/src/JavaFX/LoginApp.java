@@ -14,14 +14,6 @@ import javafx.stage.Stage;
 
 public class LoginApp extends Application{
 
-	private AnchorPane pane;
-	private TextField txtLogin;
-	private PasswordField txtSenha;
-	private Button btnLogin,btnSair;
-	private static Stage stage;
-	
-	
-	
 	
 	
 	public static void main(String[] args) {
@@ -30,73 +22,39 @@ public class LoginApp extends Application{
 
 	@Override
 	public void start(Stage Stage) throws Exception {
-        initComponent();
-        initListener();
-        initListeners();
-        Scene scene = new Scene(pane);
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.setTitle("Login");
-        stage.show();
-        initLayout();
-		LoginApp.stage=stage;
-	}
-	
-	public static Stage getStage() {
-		return stage;
-	}
-	
-	private void initComponent() {
-		pane= new AnchorPane();
+      
+		AnchorPane pane= new AnchorPane();
 		pane.setPrefSize(400, 300);
 		pane.setStyle("-fx--background-color: linear-gradient(from 0% 0% to 100% 100% blue 0%, silver 100%);");
 		
-		txtLogin= new TextField();
+		//definição dos campos
+	    TextField	txtLogin= new TextField("Digite o seu Login");
 		txtLogin.setPromptText("Digite a sua senha");
-	}
-	
-	private void initLayout(){
-		txtLogin.setLayoutX((pane.getWidth()-txtLogin.getHeight())/2);
+		
+		PasswordField txtSenha= new PasswordField();
+		txtLogin.setPromptText("Digite a sua senha");
+		
+		Button btnLogin= new Button("Logar");
+		Button btnSair= new Button("Sair");
+		
+		txtLogin.setLayoutX(50);
 		txtLogin.setLayoutY(50);
-	}
-	
-	
-	//ação do botão de sair
-	private void initListener() {
-	 btnSair.setOnAction(new EventHandler<ActionEvent>() {
 		
-		@Override
-		public void handle(ActionEvent event) {
-           fechaApp();			
-		}
-	});	 
-}
-	
-	private void fechaApp() {
-        System.exit(0);
 		
+		
+		txtSenha.setLayoutX(50);
+		txtSenha.setLayoutY(100);
+		
+		btnLogin.setLayoutX(50);
+		btnLogin.setLayoutY(150);
+		
+		pane.getChildren().addAll(txtLogin,txtSenha,btnLogin,btnSair);
+		
+		 Scene scene = new Scene(pane);
+	        Stage.setScene(scene);
+	        Stage.setResizable(false);
+	        Stage.setTitle("Login");
+	        Stage.show();
 	}
-	
-	//ação do botão de entrar
-	private void initListeners() {
-		btnLogin.setOnAction(new EventHandler<ActionEvent>() {
-
-			@Override
-			public void handle(ActionEvent event) {
-		       Login();		
-			}
-		});
-	}
-	
-	private void Login() {
-		if(txtLogin.getText().contentEquals("admin") && txtSenha.getText().equals("12345")) {
-			
-			//vai ir para a tela principal
-		}
-		else {
-			JOptionPane.showInternalMessageDialog(null, "Login ou senha inválidos","ERRO",JOptionPane.ERROR_MESSAGE);
-		}
-	}
-	
 	
 }
