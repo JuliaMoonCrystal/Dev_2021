@@ -69,11 +69,11 @@ public class LoginApp extends Application{
 
 			private void logar() {
                 if(txtLogin.getText().equals("admin") && txtSenha.getText().equals("123456")) {
-                	JOptionPane.showInternalMessageDialog(null, "Login efetuado com sucesso");
+                	JOptionPane.showMessageDialog(null, "Login efetuado com sucesso");
                 	//Vai abrir outra tela
                 }
                 else {
-                	JOptionPane.showInternalMessageDialog(null, "Login ou senha incorretos","ERRO",JOptionPane.ERROR_MESSAGE);
+                	JOptionPane.showMessageDialog(null, "Login ou senha incorretos","ERRO", JOptionPane.ERROR_MESSAGE);
                 }
 				
 			}
