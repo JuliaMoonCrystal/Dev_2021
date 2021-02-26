@@ -30,6 +30,7 @@ public class Principal extends Application{
         TableView <ItensProperty> tbVitrine;
         TableColumn<ItensProperty, String> columnProduto;
         TableColumn<ItensProperty, Double> columnPreco;
+        TableColumn<ItensProperty, Integer> columnQuantidade;
 		ObservableList<ItensProperty> listItens=FXCollections.observableArrayList();
 		Carrinho carrinho;
 		
@@ -52,21 +53,23 @@ public class Principal extends Application{
 		
 		columnProduto = new TableColumn<ItensProperty, String>("Produto");
 		columnPreco = new TableColumn<ItensProperty, Double>("Preço");
+		columnQuantidade= new TableColumn<ItensProperty, Integer>("Quantidade");
 		
-		tbVitrine.getColumns().addAll(columnProduto,columnPreco);
+		tbVitrine.getColumns().addAll(columnProduto,columnPreco,columnQuantidade);
 		pane.getChildren().addAll(txtPesquisa,btnPesquisar, tbVitrine);
 		
 		carrinho= new Carrinho();
 		
 		columnProduto.setCellValueFactory(new PropertyValueFactory<ItensProperty, String>("produto"));
 		columnPreco.setCellValueFactory(new PropertyValueFactory<ItensProperty, Double>("preco"));
+		columnQuantidade.setCellValueFactory(new PropertyValueFactory<ItensProperty,Integer>("quantidade"));
 		
 		Vitrine v= new Vitrine();
-		v.addProdutos(new Produto("Camiseta Geek",35.00), new Produto("Regata Star Wars",29.90),new Produto("Caneca GOT",40.00)
-		,new Produto("Action Figure Mother of Dragons",100.90), new Produto("Drogon",80.00));
+		v.addProdutos(new Produto("Camiseta Geek",35.00,3), new Produto("Regata Star Wars",29.90,2),new Produto("Caneca GOT",40.00,50)
+		,new Produto("Action Figure Mother of Dragons",100.90,100), new Produto("Drogon",80.00,20));
 		
 		for(Produto p:v.getProdutos())  
-			listItens.add(new ItensProperty(p.getProduto(),p.getPreco()));
+			listItens.add(new ItensProperty(p.getProduto(),p.getPreco(),p.getQuantidade()));
 		
 		tbVitrine.setItems(listItens);
 		
