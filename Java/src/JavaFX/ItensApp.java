@@ -11,6 +11,8 @@ import sun.launcher.resources.launcher;
 
 public class ItensApp extends Application {
 
+	private static   Produto produto;
+	private int index;
 	
 	public void start(Stage Stage) throws Exception {
        
@@ -19,8 +21,6 @@ public class ItensApp extends Application {
        ImageView imgitem;
        Label lbPreco,lbDescricao;
        Stage stage;
-       Produto produto;
-       int index;
        
        pane= new AnchorPane();
        pane.setPrefSize(600, 400);
@@ -34,6 +34,11 @@ public class ItensApp extends Application {
       
        
        
+	}
+
+	public static void setProduto(Produto produto) {
+		ItensApp.produto=produto;
+		
 	}
 
 	

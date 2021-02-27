@@ -7,6 +7,8 @@ import javax.swing.text.TabableView;
 import com.sun.corba.se.impl.encoding.CodeSetConversion.BTCConverter;
 
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
@@ -72,6 +74,16 @@ public class Principal extends Application{
 			listItens.add(new ItensProperty(p.getProduto(),p.getPreco(),p.getQuantidade()));
 		
 		tbVitrine.setItems(listItens);
+		
+		tbVitrine.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ItensProperty>() {
+
+			@Override
+			public void changed(ObservableValue<? extends ItensProperty> observable, ItensProperty oldItem,
+					ItensProperty newItem) {
+
+				
+			}
+		});
 		
 		
 		Scene scene = new Scene(pane);
