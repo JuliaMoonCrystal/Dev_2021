@@ -2,6 +2,9 @@ package JavaFX;
 
 import javafx.application.Application;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -48,7 +51,31 @@ public class CarrinhoApp extends Application{
 		collumQuantidade= new TableColumn<ItensProperty, Integer>("Quantidade");
 		
 		tbcarrinho.getColumns().addAll(collumProduto,collumPreco,collumQuantidade);
+		pane.getChildren().addAll(tbcarrinho,btAdicionar,btConfirmar,btRemover,btVoltar);
 		
+		btAdicionar.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@Override
+			public void handle(ActionEvent event) {
+                // Vitrine.getCarrinho().addProdutos(produto);
+				try {
+					new CarrinhoApp().start(new Stage());
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+		
+		Scene scene = new Scene(pane);
+        Stage.setScene(scene);
+        Stage.setResizable(false);
+        Stage.setTitle("CARRINHO");
+        Stage.show();
+		
+	}
+	
+	private void initItens() {
+		for(Produto p : ((Vitrine) Vitrine.getCarrinho()).getProdutos()) listItens.add(new ItensProperty(p.getProduto(),p.getPreco(),p.getQuantidade()));
 	}
 
 }

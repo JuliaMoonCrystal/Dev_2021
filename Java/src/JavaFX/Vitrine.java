@@ -15,5 +15,9 @@ public class Vitrine {
 	  public List<Produto> getProdutos(){
 		  return produtos;
 	  }
+
+	public static List<Produto> getCarrinho() {
+		return produtos;
+	}
 	  
 }
