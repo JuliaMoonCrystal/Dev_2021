@@ -27,6 +27,22 @@ public class CarrinhoApp extends Application{
 		tbcarrinho=new TableView<ItensProperty>();
 		tbcarrinho.setPrefSize(600, 500);
 		
+		btAdicionar= new Button("Adicionar");
+		btAdicionar.setLayoutX(690);
+		btAdicionar.setLayoutY(50);
+		
+		btRemover= new Button("Remover");
+		btRemover.setLayoutX(710);
+		btRemover.setLayoutY(50);
+		
+		btConfirmar= new Button("Confirmar compra");
+		btConfirmar.setLayoutX(690);
+		btConfirmar.setLayoutY(80);
+		
+		btVoltar= new Button("Voltar");
+		btVoltar.setLayoutX(710);
+		btVoltar.setLayoutY(80);
+		
 		collumProduto = new TableColumn<ItensProperty, String>("Produto");
 		collumPreco = new TableColumn<ItensProperty, Double>("Preço");
 		collumQuantidade= new TableColumn<ItensProperty, Integer>("Quantidade");
