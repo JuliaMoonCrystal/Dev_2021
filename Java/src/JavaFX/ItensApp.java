@@ -3,6 +3,7 @@ package JavaFX;
 import com.sun.xml.internal.ws.org.objectweb.asm.Label;
 
 import javafx.application.Application;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -20,7 +21,7 @@ public class ItensApp extends Application {
 	   AnchorPane pane;
        ImageView imgitem;
        Label lbPreco,lbDescricao;
-       Stage stage;
+     
        
        pane= new AnchorPane();
        pane.setPrefSize(600, 400);
@@ -28,11 +29,15 @@ public class ItensApp extends Application {
        lbPreco=new Label();
        lbDescricao= new Label();
        
-       imgitem= new ImageView(new Image("Captura de Tela(333).png"));
-       imgitem.setLayoutX(10);
-       imgitem.setLayoutY(0);
+     //  imgitem= new ImageView(new Image("\\Users\\Julia\\Documents\\Dev_2021\\Java\\src\\JavaFX"));
+     //  imgitem.setLayoutX(10);
+      // imgitem.setLayoutY(0);
       
-       
+       Scene scene = new Scene(pane);
+       Stage.setScene(scene);
+       Stage.setResizable(false);
+       Stage.setTitle("Produto");
+       Stage.show();
        
 	}
 

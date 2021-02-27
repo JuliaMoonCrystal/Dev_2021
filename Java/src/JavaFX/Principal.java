@@ -84,6 +84,12 @@ public class Principal extends Application{
 				ItensApp.setProduto(new Produto(newItem.getProduto(),newItem.getPreco(), 0));
 				ItensApp.setIndex(tbVitrine.getSelectionModel().getSelectedIndex());
 				
+				try {
+					new ItensApp().start(new Stage());
+				}catch (Exception e) {
+                   e.printStackTrace();
+				}
+				
 			}
 		});
 		
