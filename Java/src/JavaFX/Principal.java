@@ -80,7 +80,9 @@ public class Principal extends Application{
 			@Override
 			public void changed(ObservableValue<? extends ItensProperty> observable, ItensProperty oldItem,
 					ItensProperty newItem) {
-
+            
+				ItensApp.setProduto(new Produto(newItem.getProduto(),newItem.getPreco(), 0));
+				ItensApp.setIndex(tbVitrine.getSelectionModel().getSelectedIndex());
 				
 			}
 		});

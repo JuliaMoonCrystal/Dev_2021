@@ -12,7 +12,7 @@ import sun.launcher.resources.launcher;
 public class ItensApp extends Application {
 
 	private static   Produto produto;
-	private int index;
+	private static int index;
 	
 	public void start(Stage Stage) throws Exception {
        
@@ -38,6 +38,14 @@ public class ItensApp extends Application {
 
 	public static void setProduto(Produto produto) {
 		ItensApp.produto=produto;
+		
+	}
+	public static int getindex() {
+		return index;
+	}
+
+	public static void setIndex(int selectedIndex) {
+        ItensApp.index=index;
 		
 	}
 
