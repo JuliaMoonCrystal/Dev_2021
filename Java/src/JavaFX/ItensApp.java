@@ -29,9 +29,13 @@ public class ItensApp extends Application {
        lbPreco=new Label();
        lbDescricao= new Label();
        
+       
      //  imgitem= new ImageView(new Image("\\Users\\Julia\\Documents\\Dev_2021\\Java\\src\\JavaFX"));
      //  imgitem.setLayoutX(10);
       // imgitem.setLayoutY(0);
+       
+       //Vai abrir a tela com a descrição dos produtos, mas por enquanto vou deixar vazio
+      // pane.getChildren().addAll(lbDescricao,lbPreco);
       
        Scene scene = new Scene(pane);
        Stage.setScene(scene);
