@@ -31,10 +31,21 @@ INSERT INTO atividade VALUEs
 (4,'Bicicleta + Biceps + Costas + Pernas', 34.9),
 (5,'Esteira + Bicicleta ',39.9)
 
+INSERT INTO alunos VALUES
+(1,'Pedro Bezerra '),
+(2,'Julia Farias '),
+(3,'Luan Miguel ')
+
+INSERT INTO Atividade_Alunos VALUES
+(2,1.70,67.70,null,3)
+
 SELECT*FROM atividade
 SELECT*FROM alunos
 SELECT*FROM Atividade_Alunos
 
---DROP TABLE atividade
---DROP TABLE alunos
---DROP TABLE Atividade_Alunos
+SELECT Aluno_Codigo,altura,peso, imc=(peso/(altura*altura)),atividade_codigo FROM Atividade_Alunos
+
+
+DROP TABLE atividade
+DROP TABLE alunos
+DROP TABLE Atividade_Alunos
