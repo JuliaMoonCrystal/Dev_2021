@@ -23,6 +23,7 @@ public class MenuConta {
 			  opc = Integer.parseInt(JOptionPane.showInputDialog("----------Bem-Vindo----------- \n1 -Sacar da Conta Corrente- "
 					+"\n2  -Consultar Conta-"  
 			  		+ "\n3 -Pagar Fatura do Cartão- \n4 -Pagar Boleto- \n5 -Recarga de celular- \n6 -Depositar na poupança- "
+					+"\n7  -Depositar dinheiro na conta"
 			  		+"\n9 -Finalizar consulta"));
 			  
 			  //Criando novos objetos//
