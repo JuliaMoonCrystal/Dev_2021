@@ -125,6 +125,11 @@ public class operacoes {
 		return conta;
 	}
 	
+	// esse metodo vai servir para verificar se o usuario possui dinheiro na conta//
+	
+	public void Verifica() {
+		
+	}
 	
 	
 }
