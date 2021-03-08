@@ -136,7 +136,7 @@ public class operacoes {
 		conta.setSaldo(conta.getSaldo()+valor);
 		
 		//teste de saida do deposito//
-		System.out.println(" ");
+		System.out.println(" O valor depositado foi esse : "+valor+" e o seu sal atual e de : "+ conta.getSaldo());
 		
 		return conta;
 	}
