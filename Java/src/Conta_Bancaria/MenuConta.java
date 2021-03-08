@@ -43,8 +43,8 @@ public class MenuConta {
 	                  case 6: conta=metodos.DepositarPoupanca(conta);
 	                             break;
 	                             // deixar isso aqui caso eu adicione novas funções
-//	                  case 7: metodos.Pesquisa(dados_lista);
-//	                             break;
+	                  case 7: conta= metodos.depositarConta(conta);
+	                             break;
 //	                  case 8: hr.insereRegioes(dados_lista);
 //	                             break;            
 

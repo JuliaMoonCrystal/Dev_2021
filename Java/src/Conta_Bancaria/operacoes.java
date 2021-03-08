@@ -130,6 +130,16 @@ public class operacoes {
 	public void Verifica() {
 		
 	}
+
+	public Conta depositarConta(Conta conta) {
+        double valor=Double.parseDouble(JOptionPane.showInputDialog("Digite o valor a ser depositado : ")); 	
+		conta.setSaldo(conta.getSaldo()+valor);
+		
+		//teste de saida do deposito//
+		System.out.println(" ");
+		
+		return conta;
+	}
 	
 	
 }
