@@ -16,6 +16,11 @@ label{
    
 }
 
+.enviar{
+    text-align: left;
+    
+}
+
 textarea{
     width: 400px;
     height: 200px;
