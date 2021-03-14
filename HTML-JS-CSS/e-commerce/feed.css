@@ -8,9 +8,17 @@ h1{
 }
 
 body{
-    background-color: red;
+    background-color: white;
+    text-align: center;
 }
 
 label{
    
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+    line-height: 20px;
+    max-width: 400px;
 }
