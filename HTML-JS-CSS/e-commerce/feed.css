@@ -1,6 +1,7 @@
 form{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
+    font-size: 20px;
 }
 
 h1{
@@ -10,6 +11,8 @@ h1{
 body{
     background-color: white;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 label{
