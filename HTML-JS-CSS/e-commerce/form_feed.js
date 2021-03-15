@@ -5,9 +5,10 @@ function enviar(){
 
   if(nome.value !="" && email.value !=""){
       alert('Obrigado pela sua opinião');
+      console.log('testando os comandos no console');
   }
   else{
       alert('Digite alguma coisa pra que possamos registrar o seu comentário')
-  }
-
+      console.log('testando os comandos no console')
+    }
 }
