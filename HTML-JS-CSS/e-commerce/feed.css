@@ -6,6 +6,7 @@ form{
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px red;
 }
 
 body{
@@ -16,12 +17,14 @@ body{
 }
 
 label{
-   
+   padding: 10px;
 }
 
 .enviar{
     text-align: left;
-    
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
 }
 
 textarea{
