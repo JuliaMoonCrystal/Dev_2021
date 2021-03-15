@@ -23,8 +23,9 @@ label{
 .enviar{
     text-align: left;
     border-radius: 5px;
-    width: 60px;
-    height: 40px;
+    width: 100px;
+    height: 40px;    
+    font-weight: bold;
 }
 
 textarea{
