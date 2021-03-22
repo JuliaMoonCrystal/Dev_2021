@@ -1,1 +1,4 @@
-//alert('Teste do java script');
+function Teste(){
+console.log('Teste do java script');
+
+}
