@@ -1,1 +1,1 @@
-alert('Teste do java script');
+//alert('Teste do java script');
