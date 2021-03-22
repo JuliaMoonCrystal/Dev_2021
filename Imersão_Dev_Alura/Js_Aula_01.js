@@ -1,4 +1,6 @@
-function Teste(){
-console.log('Teste do java script');
+var BotaoClicado=function(){
+    alert("Função funcionando");
+ }
 
-}
+ var BotaoAdi= document.getElementById("converter");
+ BotaoAdi.onclick=BotaoClicado;
