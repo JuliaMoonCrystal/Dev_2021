@@ -2,9 +2,7 @@ var BotaoClicado=function(){
     alert("Função funcionando");
     var valorLibra=document.getElementById("Libra");
    
-
-    alert("Aqui está"+valorLibra);
-
+    prompt("Digite o valor em libras");
 
  }
 
