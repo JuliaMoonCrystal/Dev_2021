@@ -7,5 +7,10 @@
 
 body{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color:white;
+    background-color:palegoldenrod;
+}
+
+img{
+    width: 150px;
+    height: 150px;
 }
