@@ -3,7 +3,7 @@ var BotaoClicado=function(){
      
     var Libra=parseFloat(document.getElementById("Libra"));
    
-    prompt("Digite o valor em libras");
+    
 
  }
 
