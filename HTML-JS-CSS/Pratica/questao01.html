@@ -19,6 +19,11 @@
                 letter-spacing: 1px
             }
 
+            label {
+               display: block;
+               margin-bottom: 10px;
+            }
+
             textarea{
                 padding: 10px;
                 line-height: 1.5;
@@ -55,7 +60,9 @@
             <label>MENSSAGEM:</label> 
             <br>
             <textarea id="assunto" rows="5" cols="33"></textarea>
-        
+            <br>
+            <br>
+            <input type="submit" value="Enviar" id="enviar" onclick="ativar()">
         </form>
 
     </body>
