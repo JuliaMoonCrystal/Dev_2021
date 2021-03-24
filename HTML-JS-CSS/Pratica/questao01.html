@@ -31,6 +31,11 @@
                 border: 1px solid #ccc;
                 box-shadow: 1px 1px 1px #999;
             }
+
+            input{
+                border-radius: 5px;
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
@@ -64,6 +69,16 @@
             <br>
             <input type="submit" value="Enviar" id="enviar" onclick="ativar()">
         </form>
+
+        <script>
+         var btnAtivar=document.getElementById("enviar");
+         btnAtivar.onclick=btnAux;
+
+         var btnAux= function ativar(){
+             alert("Email enviado com sucesso");
+         }
+
+        </script>
 
     </body>
 </html>
