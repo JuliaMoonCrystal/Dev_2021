@@ -19,6 +19,7 @@
            button{
                padding: 20px;
                border: 20px;
+               border-radius: 20px;
                border-color: black;
                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                font-size: large;
@@ -34,20 +35,27 @@
         <br>
         <br>
 
-        <button onclick="mostrar()">Sortear Pokémon</button>
+        <button onclick="mostrar()">Adivinhar nome do Pokémon</button>
 
-    
         <script>
 
-            var numero_aleatório=Math.round(Math.random()*4);
-            var Principal= new Array();
+           // var numero_aleatório=Math.round(Math.random()*4);
+         //   var Principal= new Array();
+            var nomePokemon="Pikachu"
 
-         
-           function mostrar(){ 
-           alert("Botão funcionando");    
-           Principal[0]=<img src="dragonat.jpeg"></img>
+           var mostrar=function (){ 
+            var tentativaNome=prompt("Quem é esse Pokémon?");
+            
+            if(nomePokemon==""){
+              alert("Você precisa digitar um nome!");
+            }
+            else if(nomePokemon==tentativaNome){
+                 alert("Parabéns acertou o pokémon");
+             }
+             else{
+                 alert("Infelizmente errou");
+             }
            }
-
         </script>
     </body>
 </html>
