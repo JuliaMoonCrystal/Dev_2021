@@ -52,9 +52,9 @@
         <script>
            // var numero_aleatório=Math.round(Math.random()*4);
 
-            var nomePokemon="Pikachu"
+           var nomePokemon="Pikachu"
 
-           var mostrar=function (){ 
+           var mostrar=function(){ 
             var tentativaNome=prompt("Quem é esse Pokémon?");
             
             if(nomePokemon==""){
@@ -67,6 +67,23 @@
                  alert("Infelizmente errou");
              }
            }
+            
+           var nomePokemon1="Dragonite"
+
+           var mostrar1=function(){
+            var tentativaNome=prompt("Quem é esse Pokémon?");
+            
+            if(nomePokemon1==""){
+              alert("Você precisa digitar um nome!");
+            }
+            else if(nomePokemon1==tentativaNome){
+                 alert("Parabéns acertou o pokémon");
+             }
+             else{
+                 alert("Infelizmente errou");
+             }
+           }
+           
         </script>
     </body>
 </html>
