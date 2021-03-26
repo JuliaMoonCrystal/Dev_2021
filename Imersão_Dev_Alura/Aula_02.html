@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Exibir um pokemon na tela e pedir para o usuario escrever o nome desse pokemon. Exibir se acertou ou errou o nome.-->
         <title>Imersão Dev Aula 02 Adivinhe o Pokémon</title>
         <meta charset="utf-8">
         
@@ -38,9 +39,15 @@
         <button onclick="mostrar()">Adivinhar nome do Pokémon</button>
 
         <script>
-
            // var numero_aleatório=Math.round(Math.random()*4);
-         //   var Principal= new Array();
+            var Principal= new Array();
+            var imagem= new Image();
+
+            imagem.src="pikachu.png"
+            imagem.height=30;
+            imagem.width=50;
+            Principal[0]=imagem;
+
             var nomePokemon="Pikachu"
 
            var mostrar=function (){ 
