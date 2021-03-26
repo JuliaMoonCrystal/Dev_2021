@@ -7,6 +7,14 @@
         <style>
             body{
                 text-align: center;
+                background-color: rosybrown;
+            }
+
+            img{
+              height: 30;
+              width: 50;
+              border-radius: 30px;
+
             }
            button{
                padding: 20px;
@@ -21,39 +29,23 @@
     </head>
     <body>
         <h1>Adivinhe o nome do Pokémon</h1>
+        
+        <img src="pikachu.png">
+        <br>
+        <br>
+
         <button onclick="mostrar()">Sortear Pokémon</button>
 
+    
         <script>
 
             var numero_aleatório=Math.round(Math.random()*4);
             var Principal= new Array();
 
-            var imagem= new image();
-            imagem.src="dragonat.jpeg"
-            imagem.width = 59;
-            imagem.height = 30;
-            var nome="dragonite"
-
-            var imagem1= new image();
-            imagem1.src="pikachu.png"
-            imagem1.width = 59;
-            imagem1.height = 30;
-            var nome1="pikachu"
-
-            var imagem2= new image();
-            imagem2.src="suikune.png"
-            imagem2.width = 59;
-            imagem2.height = 30;
-            var nome2="suikune"
-
-            var image3= new image();
-            imagem3.src="raiku.png"
-            imagem3.width = 59;
-            imagem3.height = 30;
-            var nome3="raiku"
-     
+         
            function mostrar(){ 
-           Principal[numero_aleatório]
+           alert("Botão funcionando");    
+           Principal[0]=<img src="dragonat.jpeg"></img>
            }
 
         </script>
