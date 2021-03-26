@@ -67,7 +67,7 @@
             else if(nomePokemon==tentativaNome){
                  alert("Parabéns acertou o pokémon");
                  acertos++;
-                 console.log(acertos+ " , "+erros);
+                 console.log("Acertos "+acertos+ " , Erros "+erros);
              }
              else{
                  alert("Infelizmente errou");
@@ -86,9 +86,13 @@
             }
             else if(nomePokemon1==tentativaNome){
                  alert("Parabéns acertou o pokémon");
+                 acertos++;
+                 console.log("Acertos "+acertos+ " , Erros "+erros);
              }
              else{
                  alert("Infelizmente errou");
+                 erros++;
+                 console.log(acertos+ " , "+erros);
              }
            }
            
