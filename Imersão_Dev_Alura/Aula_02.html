@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--Exibir um pokemon na tela e pedir para o usuario escrever o nome desse pokemon. Exibir se acertou ou errou o nome.-->
+        <!--Exibir um pokemon na tela e pedir para o usuario escrever o nome desse pokemon. Exibir se acertou ou errou o nome.
+        Vou colocar mais algumas opções,mas o objetivo era fazer uma especie de
+        roleta em que independente de acertar ouerrar o usuário possa sortear outra imagem
+        se alguem conseguir ajudar eu agradesceria -->
         <title>Imersão Dev Aula 02 Adivinhe o Pokémon</title>
         <meta charset="utf-8">
         
@@ -37,16 +40,17 @@
         <br>
 
         <button onclick="mostrar()">Adivinhar nome do Pokémon</button>
+        <br>
+        <br>
+
+        <img src="dragonat.jpeg">
+        <br>
+        <br>
+
+        <button onclick="mostrar1()">Adivinhar nome do Pokémon</button>
 
         <script>
            // var numero_aleatório=Math.round(Math.random()*4);
-            var Principal= new Array();
-            var imagem= new Image();
-
-            imagem.src="pikachu.png"
-            imagem.height=30;
-            imagem.width=50;
-            Principal[0]=imagem;
 
             var nomePokemon="Pikachu"
 
