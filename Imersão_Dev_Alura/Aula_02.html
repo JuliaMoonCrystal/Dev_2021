@@ -53,7 +53,9 @@
         <br>
         
         <script>
-           // var numero_aleatório=Math.round(Math.random()*4);
+           //esse variavel serve para gerar um numero aleatório
+          //que vai garantir as imagens aleatórias
+           var numero_aleatório=Math.round(Math.random()*4);
            
            //aqui vai servir pra contabilizar os acertos e os erros
            var acertos=0;
@@ -78,7 +80,14 @@
             imagem.width = 200;
             imagem.height = 190;
             principal[0] = imagem;
-            document.body.appendChild(imagem);
+
+            imagem1.src="dragonat.jpeg"
+            imagem1.width = 200;
+            imagem1.height = 190;
+            principal[1] = imagem1;
+
+            console.log(numero_aleatório);
+            document.body.appendChild(principal[numero_aleatório]);
 
            }
            
