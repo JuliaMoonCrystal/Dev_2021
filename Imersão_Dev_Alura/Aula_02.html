@@ -68,7 +68,7 @@
             
             //esse variavel serve para gerar um numero aleatório
            //que vai garantir as imagens aleatórias
-            var numero_aleatório=Math.round(Math.random()*4);
+            var numero_aleatório=Math.round(Math.random()*3);
             
             var principal = new Array();
             var imagem = new Image();
@@ -92,6 +92,11 @@
             imagem2.height = 190;
             principal[2] = imagem2;
 
+            imagem3.src = "raiku.png";
+            imagem3.width = 200;
+            imagem3.height = 190;
+            principal[3] = imagem3;
+
             console.log(numero_aleatório);
             document.body.appendChild(principal[numero_aleatório]); 
             //document.body.removeChild(principal[numero_aleatório]);
@@ -101,7 +106,7 @@
            
            //essaparte ainda vai ter modificação porque para todos
            //as opições q nome está certo
-            if( tentativaNome===nomePokemon){
+            if(tentativaNome===nomePokemon){
                 alert("Acertou");
                 acertos++
             }
