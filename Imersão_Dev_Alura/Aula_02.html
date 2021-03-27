@@ -48,7 +48,7 @@
         <br>
         <br>
         
-        <button onclick="mostrar()">Sortear Pokémon</button>
+        <button onclick="sortear()">Sortear Pokémon</button>
         <br>
         <br>
 
@@ -64,10 +64,10 @@
            var nomePokemon2="Dragonite"
            var nomePokemon3="Raiku"
 
-           var mostrar=function(){ 
+           var sortear=function(){ 
             
             //esse variavel serve para gerar um numero aleatório
-          //que vai garantir as imagens aleatórias
+           //que vai garantir as imagens aleatórias
             var numero_aleatório=Math.round(Math.random()*4);
             
             var principal = new Array();
@@ -88,7 +88,8 @@
 
             console.log(numero_aleatório);
             document.body.appendChild(principal[numero_aleatório]); 
-            
+           }
+           var mostrar=function(){
             var tentativaNome=prompt("Quem é esse Pokémon?");
            }
            
