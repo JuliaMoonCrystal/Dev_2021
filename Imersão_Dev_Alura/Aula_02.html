@@ -35,7 +35,7 @@
     <body>
         <h1>Adivinhe o nome do Pokémon</h1>
         
-        <img src="pikachu.png">
+      <!--  <img src="pikachu.png">
         <br>
         <br>
 
@@ -46,9 +46,12 @@
         <img src="dragonat.jpeg">
         <br>
         <br>
-
-        <button onclick="mostrar1()">Adivinhar nome do Pokémon</button>
-
+      -->
+        
+        <button onclick="mostrar()">Adivinhar nome do Pokémon</button>
+        <br>
+        <br>
+        
         <script>
            // var numero_aleatório=Math.round(Math.random()*4);
            
@@ -57,43 +60,20 @@
            var erros=0;
 
            var nomePokemon="Pikachu"
-
+           var nomePokemon1="Suikune"
+           
            var mostrar=function(){ 
             var tentativaNome=prompt("Quem é esse Pokémon?");
             
-            if(nomePokemon==""){
-              alert("Você precisa digitar um nome!");
-            }
-            else if(nomePokemon==tentativaNome){
-                 alert("Parabéns acertou o pokémon");
-                 acertos++;
-                 console.log("Acertos "+acertos+ " , Erros "+erros);
-             }
-             else{
-                 alert("Infelizmente errou");
-                 erros++;
-                 console.log(acertos+ " , "+erros);
-             }
-           }
+            var principal = new Array();
+            var imagem = new Image();
             
-           var nomePokemon1="Dragonite"
+            imagem.src = "pikachu.png";
+            imagem.width = 200;
+            imagem.height = 190;
+            principal[0] = imagem;
+            document.body.appendChild(imagem);
 
-           var mostrar1=function(){
-            var tentativaNome=prompt("Quem é esse Pokémon?");
-            
-            if(nomePokemon1==""){
-              alert("Você precisa digitar um nome!");
-            }
-            else if(nomePokemon1==tentativaNome){
-                 alert("Parabéns acertou o pokémon");
-                 acertos++;
-                 console.log("Acertos "+acertos+ " , Erros "+erros);
-             }
-             else{
-                 alert("Infelizmente errou");
-                 erros++;
-                 console.log(acertos+ " , "+erros);
-             }
            }
            
         </script>
