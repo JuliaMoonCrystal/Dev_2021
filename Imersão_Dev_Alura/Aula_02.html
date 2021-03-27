@@ -53,9 +53,6 @@
         <br>
         
         <script>
-           //esse variavel serve para gerar um numero aleatório
-          //que vai garantir as imagens aleatórias
-           var numero_aleatório=Math.round(Math.random()*4);
            
            //aqui vai servir pra contabilizar os acertos e os erros
            var acertos=0;
@@ -68,6 +65,11 @@
            var nomePokemon3="Raiku"
 
            var mostrar=function(){ 
+            
+            //esse variavel serve para gerar um numero aleatório
+          //que vai garantir as imagens aleatórias
+            var numero_aleatório=Math.round(Math.random()*4);
+            
             var tentativaNome=prompt("Quem é esse Pokémon?");
             
             var principal = new Array();
