@@ -79,6 +79,7 @@
             imagem.src = "pikachu.png";
             imagem.width = 200;
             imagem.height = 190;
+            imagem.name="Pikachu"
             principal[0] = imagem;
 
             imagem1.src="dragonat.jpeg"
@@ -97,6 +98,17 @@
            }
            var mostrar=function(){
             var tentativaNome=prompt("Quem é esse Pokémon?");
+           
+           //essaparte ainda vai ter modificação porque para todos
+           //as opições q nome está certo
+            if(tentativaNome===nomePokemon){
+                alert("Acertou");
+                acertos++
+            }
+            else{
+                alert("errou");
+                erros++;
+            }
            }
            
         </script>
