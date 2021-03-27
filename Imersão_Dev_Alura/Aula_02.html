@@ -86,8 +86,14 @@
             imagem1.height = 190;
             principal[1] = imagem1;
 
+            imagem2.src = "suikune.png";
+            imagem2.width = 200;
+            imagem2.height = 190;
+            principal[2] = imagem2;
+
             console.log(numero_aleatório);
             document.body.appendChild(principal[numero_aleatório]); 
+            //document.body.removeChild(principal[numero_aleatório]);
            }
            var mostrar=function(){
             var tentativaNome=prompt("Quem é esse Pokémon?");
