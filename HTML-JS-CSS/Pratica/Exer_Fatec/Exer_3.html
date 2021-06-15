@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 3</title>
+        <style>
+            p,h1{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                font-size: x-large;
+            }
+            body{
+                background-color: cornflowerblue;
+                text-align: center;
+            }
+
+            img{
+                height: 200px;
+                border-radius: 25px;
+            }
+
+            button{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercicio 3</h1>
+        <p>Receba a base e a altura de um tri�ngulo. Calcule e mostre sua �rea</p>
+        <img src="js.png">
+        <br>
+        <P>Obs : Toda as operações serão efetuadas pelo console! ou apertando o botão</P>
+        <br>
+
+        <button>Aperte aqui</button>
+        <script>
+             var button= document.querySelector('button');
+              
+            button.onclick=function(){
+            var altura,base, area;
+
+            altura=parseFloat(prompt('Digite o valor da altura do triangulo: '));
+            base=parseFloat(prompt('Digite o valor da base do triangulo: '));
+
+            area=parseFloat((altura*base)/2);
+
+            alert('A área do triangulo é : '+area);
+            }
+
+        </script>
+    </body>
+</html>
