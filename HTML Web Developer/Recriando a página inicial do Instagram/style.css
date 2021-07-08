@@ -39,10 +39,10 @@ body{
 
 .instagram-conteiner{
     display: flex;
-    align-items: center; /*horizontal*/
+    align-items:center; /*horizontal*/
     justify-content:space-around; /* vertical*/
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     min-height: 34rem;
 }
 
@@ -53,12 +53,16 @@ body{
     flex-direction: column;
     background-color: white;
     width: 100%;
-    padding: 1.3rem 0;
+    padding: 15;
     border: 1px solid lightgrey;
 }
 
 .group:nth-child(1){
     min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
 }
 
 .perfil-foto{
@@ -108,7 +112,7 @@ body{
 }
 
 .get-app{
-    color: crimson;
+    color: white;
 }
 .download {
     display: flex;
@@ -155,7 +159,7 @@ body{
         display: none;
     }
 
-    .instagram-conteiner {
+    .instagram-conteiner{
         width: 100%;
     }
     
