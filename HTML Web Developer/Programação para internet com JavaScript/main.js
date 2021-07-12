@@ -13,7 +13,7 @@ console.log(idade);
 */
 
 
-/*String no alert e no console*/
+/*String no alert e no console
 var frase="O Brasil é o melhor time do mundo";
 console.log(frase);
 alert(frase);
@@ -24,10 +24,25 @@ alert(frase.replace("Brasil","Japão"));
 
 console.log(frase.toUpperCase());
 alert(frase.toUpperCase());
+*/
 
 /* é possivel fazer contas também*/
 
 var n1=10;
 var n2=9
 
-console.log(n1+n2);
+//console.log(n1+n2);
+
+/*Trabalhando com listas*/
+
+//var lista=['maça','pera','laranja']
+
+//lista.push("Uva")
+//console.log(lista.toString());
+//console.log(lista[0]);
+
+//alert(lista.join(" | "));
+//alert(lista[1]);
+
+/*Condicionais*/
+
