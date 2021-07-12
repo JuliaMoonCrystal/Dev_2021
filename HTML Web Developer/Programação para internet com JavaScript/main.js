@@ -6,7 +6,7 @@ alert("Bem-vindo a página "+ nome);
 /*exemplo usando o conole.log*/
 
 var nome ="Julia";
-var idade=22;
+//var idade=22;
 /* 
 console.log(nome);
 console.log(idade);
@@ -45,4 +45,21 @@ var n2=9
 //alert(lista[1]);
 
 /*Condicionais*/
+
+//var idade=prompt("Qual a sua idade?");
+//if(idade >=18){
+//    alert("Usuário é maior de idade");
+//}
+//else{
+ //   alert("Usuário menor de idade");
+//}
+
+/* laçõs de repetição*/
+
+var cont=0;
+while(cont <5){
+  console.log(cont);
+  cont++;
+}
+
 
