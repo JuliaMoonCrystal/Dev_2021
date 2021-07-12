@@ -56,10 +56,48 @@ var n2=9
 
 /* laçõs de repetição*/
 
-var cont=0;
-while(cont <5){
-  console.log(cont);
-  cont++;
+//var cont=0;
+//while(cont <5){
+ // console.log(cont);
+//  cont++;
+//}
+
+/*TRABALHANDO COM FUNÇÕES*/
+
+/*function soma(n1,n2){
+  return n1+n2;
+}
+
+function setReplace(frase,nome,novo_nome){
+  return frase.replace(nome,novo_nome);
+}
+
+function validaIdade(idade){
+    var valido;
+    if(idade =>18){
+        valido=true;
+    }
+    else{
+        valido=false;
+    }
+    return valido;
+}
+
+var idade=prompt("Digite a sua idade: ");
+console.log(validaIdade(idade));
+
+alert(setReplace("Vai Japão","Brasil","Japão"));
+
+console.log(soma(5,10));
+alert(soma(7,7));
+*/
+
+/*Manipulando elementos da pagina*/
+function btn(){
+//alert("Botão clicado");
+ document.getElementById("obrigado").innerHTML="<b>Obrigado por clicar</b>";
+ //window.open("https://unionmangas.top/home");
+ window.location.href="https://unionmangas.top/home";
 }
 
 
