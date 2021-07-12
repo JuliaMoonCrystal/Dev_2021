@@ -100,4 +100,21 @@ function btn(){
  window.location.href="https://unionmangas.top/home";
 }
 
+function trocar(){
 
+    document.getElementById("mouseover").innerHTML="Obrigado por passar o mouse"
+    //alert("Trocar texto.");
+}
+
+function voltar(){
+    document.getElementById("mouseover").innerHTML="Passe o mouse aqui";
+}
+
+function load(){
+    alert("Página carregada")
+}
+
+function funcaoChange (elemento){
+     console.log(elemento.value);
+
+}

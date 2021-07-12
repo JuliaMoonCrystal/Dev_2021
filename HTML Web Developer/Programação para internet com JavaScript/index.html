@@ -4,12 +4,18 @@
         <meta charset="UTF-8">
         <title>Minha página</title>
     </head>
-    <body>
+    <body onload="load()">
         <script src="main.js" type="text/javascript"></script>
         <h1 >Tinkingmind</h1> 
         <button type="button" onclick="btn()">Botão</button>
         <h3 id="obrigado"></h3>
         <p id="obrigado" onclick="btn()"></p>
-
-    </body>
+        <p id="mouseover" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+         <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+         </select>
+   
+        </body>
 </html>
