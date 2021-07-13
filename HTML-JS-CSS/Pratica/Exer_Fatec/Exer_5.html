@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 5</title>
+        <style>
+            p,h1{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                font-size: x-large;
+            }
+            body{
+                background-color: cornflowerblue;
+                text-align: center;
+            }
+
+            img{
+                height: 200px;
+                border-radius: 25px;
+            }
+
+            button{
+                text-align: center;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercicio 5</h1>
+        <p>Receba os coeficientes A, B e C de uma equação do 2º grau (AX+²BX+C=0). 
+           Calcule e mostre as raízes reais</p>
+        <img src="js.png">
+        <br>
+        <P>Obs : Toda as operações serão efetuadas pelo console! ou apertando o botão</P>
+        <br>
+
+        <button>Aperte aqui</button>
+        <script>
+             var button= document.querySelector('button');
+              
+            button.onclick=function(){
+            var a,b,c,delta,raiz1,raiz2;
+
+            a=parseInt(prompt('Digite o valor de A '));
+            a=parseInt(prompt('Digite o valor de B '));
+            a=parseInt(prompt('Digite o valor de C '));
+
+            delta= (b*b) - 4 * a * c;
+            
+            raiz1 = (-b + delta)/2*a;
+		    raiz2 = (-b - delta)/2*a;
+            
+
+            alert('A raiz 1 é'+raiz1+ 'e a raiz 2 é :'+raiz2);
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 2</title>
+        <style>
+            p,h1{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                font-size: x-large;
+            }
+            body{
+                background-color: cornflowerblue;
+                text-align: center;
+            }
+
+            img{
+                height: 200px;
+                border-radius: 25px;
+            }
+
+            button{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercicio 2</h1>
+        <p>Receba o salário de um funcionário e mostre o novo salário com reajuste de 15%</p>
+        <img src="js.png">
+        <br>
+        <P>Obs : Toda as operações serão efetuadas pelo console! ou apertando o botão</P>
+        <br>
+
+        <button>Aperte aqui</button>
+        <script>
+            var button= document.querySelector('button');
+              
+            button.onclick=function(){
+            var salario,novosalario;
+            
+            salario=parseFloat(prompt('Digite o salário :'));
+            
+            novosalario=(salario*0.15)+salario;
+
+            alert('O seu novo Salário é de: '+novosalario);
+            }
+
+        </script>
+    </body>
+</html>

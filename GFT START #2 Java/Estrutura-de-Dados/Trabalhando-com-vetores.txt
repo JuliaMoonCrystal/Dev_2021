@@ -1,0 +1,42 @@
+//exemplo de vetores
+
+//declaração de vetores: 
+//vetor[7] ou vetor[]={0,1,1,1,1}
+
+
+programa {
+	funcao inicio() {
+		inteiro vetor[5]// vetor com posição e valores já definidos
+		inteiro num //valor que será inserido pelo usuário
+		logico verdade=falso
+		
+		vetor[0]=10
+		vetor[1]=20
+		vetor[2]=30
+		vetor[3]=40
+		vetor[4]=50
+		
+		//mostrando o primeiro indice do vetor
+		escreva(vetor[0])
+		
+		//percorrendo o vetor inteiro
+		para(inteiro posicao=0; posicao <=4;posicao++){
+		    escreva("O valor do vetor na posição : "+posicao+" é : "+vetor[posicao]+"\n")
+		}
+		
+		//pesquisa em um vetor
+		
+		escreva("Qual o numero que deseja procurar? \n")
+		leia(num)
+		para(inteiro posicao=0; posicao <=4;posicao++){
+		    se(vetor[posicao]== num){
+		    verdade=verdadeiro      
+		    escreva("O valor: "+num+" está no vetor na posição: "+posicao)
+      	  }
+      	 }
+      	   se(nao verdade){
+      	      escreva("Infelizmente o valor digitado não se encontra no vetor")
+		}
+		
+	}
+}

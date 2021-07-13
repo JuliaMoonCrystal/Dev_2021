@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 4</title>
+        <style>
+            p,h1{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                font-size: x-large;
+            }
+            body{
+                background-color: cornflowerblue;
+                text-align: center;
+            }
+
+            img{
+                height: 200px;
+                border-radius: 25px;
+            }
+
+            button{
+                text-align: center;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercicio 4</h1>
+        <p>Receba a temperatura em graus Celsius. Calcule e mostre a sua temperatura convertida em fahrenheit (F = (9*C+160)/5</p>
+        <img src="js.png">
+        <br>
+        <P>Obs : Toda as operações serão efetuadas pelo console! ou apertando o botão</P>
+        <br>
+
+        <button>Aperte aqui</button>
+        <script>
+             var button= document.querySelector('button');
+              
+            button.onclick=function(){
+            var Celsius,f;
+
+            Celsius=parseInt(prompt('Digite o valor da temperatura: '));
+            f=(9*Celsius+160)/5;
+
+            
+
+            alert('A conversão de Celsius para Fahenheit é : '+f);
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Gasolina ou Álcool?</title>
+        <style>
+            h1{
+                color: red;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Gasolina ou Álcool?</h1>
+        <script>
+            var carro_gasolina=40;
+            var caminho_gasolina=480;
+            var consumo_gasolina;
+
+            consumo_gasolina=caminho_gasolina/carro_gasolina;
+
+            var carro_alcool= 40;
+            var caminho_alcool=300;
+            var consumo_alcool;
+
+            consumo_alcool=caminho_alcool/carro_alcool;
+
+            var pula_linha= function(){
+                document.write("<br>");
+            }
+
+
+
+            document.write("O carro consome: "+consumo_gasolina+" de gasolina por KM ");
+            pula_linha();
+            pula_linha();
+
+            document.write(" ----------------------------------");
+
+            pula_linha();
+            pula_linha();
+            document.write("O carro consome: "+consumo_alcool+" de álcool por KM ");
+            
+           
+
+
+
+        </script>
+
+    </body>
+</html>

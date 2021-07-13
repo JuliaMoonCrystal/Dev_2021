@@ -1,0 +1,43 @@
+body{
+   background-color:goldenrod;
+   background-image:url();
+   color: white;
+   
+}
+img{
+    border-radius: 30%;
+}
+.logo{
+    text-align: center;
+    background-color:white;
+}
+.nome_empresa{
+    text-align: left;
+    background-color: gray;
+    border: 15px solid gray;
+   
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.introducao{
+    color: black;
+    font-size: x-large;
+    text-align: justify;
+    padding: 10px 10px 10px 10px;
+}
+.selo{
+  text-align: center;
+  border: 5px solid steelblue;
+}
+
+.lista{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: blue;
+}

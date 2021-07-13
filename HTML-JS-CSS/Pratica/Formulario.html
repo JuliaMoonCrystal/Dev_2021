@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Formulário em html</title>
+        <style>
+          form{
+              text-align: center;
+          }
+          body{
+              background-color:whitesmoke;
+              text-align: center;
+          }
+          p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+          }
+          .Confirmar{
+             border-radius: 20pt;
+          }
+          img{
+            border-image: 40;
+          }
+        </style>
+    </head>
+    <body>
+        <h1>Formulário Simples usando o html</h1>
+        <img src="ht.png" width="100" height="100">
+        <form>
+
+            <p>Nome</p>
+            <input type="text" name="Nome" placeholder="Digite o seu nome aqui">
+             <br>
+       
+            <p>Email</p>
+            <input type="email" name="Email" placeholder="Digite o seu email">
+            <br>
+
+            <p>Senha</p>
+            <input type="text" name="Senha" placeholder="Digite a senha">
+            <br>
+
+            <p>Nascimento</p>
+            <input type="date" name="nascimento">
+            <br>
+
+            <br>
+            <input type="button" name="Confirmar" value="Confirmar" onclick="clic()">
+        </form>
+
+         <script>
+               console.log("------------------------------------")
+               console.log("Se você está vendo iso parabéns")
+               console.log("------------------------------------")
+
+             function clic(){
+                 alert("Informações confimadas com sucesso!");
+             }
+
+             var pula_linha=function(){
+                 document.write("<br>")
+             }
+
+         </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Desenhando com Canvas</title>
+        <style>
+            h1{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Desenhando com Canvas</h1>
+        <canvas id='tela' width="1000" height="1000"></canvas>
+        
+        <script>
+            var tela=document.getElementById('tela');
+            var c=tela.getContext('2d');
+
+            c.fillStyle='green';
+            c.fillRect(0,0,200,400);
+
+            c.fillStyle='red';
+            c.fillRect(400,0,200,400);
+
+           // c.fillStyle='blue';
+           // c.beginPath();
+           // c.moveTo(300,200);
+           // c.lineTo(200,400);
+          //  c.lineTo(400,400);
+          //  c.fill();
+
+            c.fillStyle='blue';
+            c.beginPath();
+            c.arc(300,200,0,2*3.14);
+            c.fill();
+
+
+            c.fillStyle='yellow';
+            c.fillRect(0,250,400,200);
+
+        </script>
+    </body>
+</html>

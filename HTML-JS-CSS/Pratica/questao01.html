@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Questão 01</title>
+        <meta charset="UTF-8">
+        <style>
+            h1{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: red;
+            }
+
+            p{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: large;
+            }
+
+            label,textarea{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: large;
+                letter-spacing: 1px
+            }
+
+            label {
+               display: block;
+               margin-bottom: 10px;
+            }
+
+            textarea{
+                padding: 10px;
+                line-height: 1.5;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-shadow: 1px 1px 1px #999;
+            }
+
+            input{
+                border-radius: 5px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contato da Faculdade</h1>
+        <br>
+        <br>
+
+        <p>Rua José Elias de Almeida  S/N -Barro Novo</p>
+        <p>Brumado -BA- Brasil</p>
+        <p>Telefone: (11) 11111-1111</p>
+        <br>
+        <br>
+
+        <form>
+           <label> NOME:</label> 
+           <input type="text" id="nome" placeholder="Digite o seu nome">
+            <br>
+            <br>
+            <label>EMAIL:</label>
+            <input type="text" id="email" placeholder="Digite o seu email">
+            <br>
+            <br>
+            <label>ASSUNTO:</label>
+            <input type="text" id="assunto" placeholder="assunto do email">
+            <br>
+            <br>
+            <label>MENSSAGEM:</label> 
+            <br>
+            <textarea id="assunto" rows="5" cols="33"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar" id="enviar" onclick="ativar()">
+        </form>
+
+        <script>
+         var btnAux= function ativar(){
+             alert("Email enviado com sucesso");
+         }
+
+         var btnAtivar=document.getElementById("enviar");
+         btnAtivar.onclick=btnAux;
+        </script>
+
+    </body>
+</html>

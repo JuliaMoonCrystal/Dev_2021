@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Cálculo do IMC</title>
+        <style>
+          h1{
+              text-align: center;
+          }
+          body{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20;
+              text-align: center;
+              background-color: yellowgreen;
+          }
+
+        </style>
+    </head>
+    <body>
+        <h1 >Cálculo do IMC </h1>
+        <script>
+          //  console.log("Coloque as informações aqui");
+            var situacao;
+
+            var pula_linha=function(){
+                document.write("<br>");
+            }
+
+            var linha_tracada=function(){
+                document.write("--------------------------------");
+            }
+
+            var nome=prompt("Digite o seu nome");
+            var altura=prompt("Dogite a sua altura:");
+            var peso=prompt("Digite o seu peso");
+            
+            document.write("Seu nome é:"+nome);
+            pula_linha();
+
+            document.write("Sua altura é: "+altura);
+            pula_linha();
+
+            document.write("Seu peso é: "+peso);
+            pula_linha();
+            
+            var calculo_imc=function(altura,peso){
+                calculo_imc=peso/(altura*altura);
+                return calculo_imc;
+            }
+            
+            var imc=calculo_imc(altura,peso);
+            document.write("O seu imc é: "+Math.round(imc));
+            pula_linha();
+
+            if(imc < 18.5){
+                situacao='Abaixo do peso';
+                document.write("O resultado é: "+situacao);
+                pula_linha();
+                linha_tracada();
+            }
+            if(imc <=24.9){
+                 situacao='Peso normal';
+                 document.write("O resultado é: "+situacao);
+                 pula_linha();
+                 linha_tracada();
+            } 
+            if(imc >=25.0 && imc<=29.9){
+                situacao='Sobrepeso';
+                document.write("O resultado é: "+situacao);
+                pula_linha();
+                linha_tracada();
+            }
+            if(imc >=30.0 && imc <=34.9){
+                situacao='Obesidade grau I'
+                document.write("O resultado é: "+situacao);
+                pula_linha();
+                linha_tracada();
+            }
+            if(imc >35.0){
+                situacao='Obesidade grau II'
+                document.write("O resultado é: "+situacao);
+                pula_linha();
+                linha_tracada();
+            }
+
+        </script>
+    </body>
+</html>

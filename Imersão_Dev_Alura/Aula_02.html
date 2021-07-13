@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Exibir um pokemon na tela e pedir para o usuario escrever o nome desse pokemon. Exibir se acertou ou errou o nome.
+        Vou colocar mais algumas opções,mas o objetivo era fazer uma especie de
+        roleta em que independente de acertar ouerrar o usuário possa sortear outra imagem
+        se alguem conseguir ajudar eu agradesceria -->
+        <title>Imersão Dev Aula 02 Adivinhe o Pokémon</title>
+        <meta charset="utf-8">
+        
+        <style>
+            body{
+                text-align: center;
+                background-color: rosybrown;
+            }
+
+            img{
+              height: 30;
+              width: 50;
+              border-radius: 30px;
+
+            }
+           button{
+               padding: 10px;
+               border: 10px;
+               border-radius: 20px;
+               border-color: black;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               font-size: large;
+               color: red;
+           }
+
+        </style>
+    </head>
+    <body>
+        <h1>Adivinhe o nome do Pokémon</h1>
+        
+      <!--  <img src="pikachu.png">
+        <br>
+        <br>
+
+        <img src="dragonat.jpeg">
+        <br>
+        <br>
+      -->
+        
+        <button onclick="mostrar()">Adivinhar nome do Pokémon</button>
+        <br>
+        <br>
+        
+        <button onclick="sortear()">Sortear Pokémon</button>
+        <br>
+        <br>
+
+        <script>
+           
+           //aqui vai servir pra contabilizar os acertos e os erros
+           var acertos=0;
+           var erros=0;
+
+           //nomes certos dos pokémons
+           var nomePokemon="Pikachu"
+           var nomePokemon1="Suikune"
+           var nomePokemon2="Dragonite"
+           var nomePokemon3="Raiku"
+
+           var sortear=function(){ 
+            
+            //esse variavel serve para gerar um numero aleatório
+           //que vai garantir as imagens aleatórias
+            var numero_aleatório=Math.round(Math.random()*3);
+            
+            var principal = new Array();
+            var imagem = new Image();
+            var imagem1=new Image();
+            var imagem2=new Image();
+            var imagem3=new Image();
+            
+            imagem.src = "pikachu.png";
+            imagem.width = 200;
+            imagem.height = 190;
+            imagem.title="Pikachu"
+            principal[0] = imagem;
+
+            imagem1.src="dragonat.jpeg"
+            imagem1.width = 200;
+            imagem1.height = 190;
+            principal[1] = imagem1;
+
+            imagem2.src = "suikune.png";
+            imagem2.width = 200;
+            imagem2.height = 190;
+            principal[2] = imagem2;
+
+            imagem3.src = "raiku.png";
+            imagem3.width = 200;
+            imagem3.height = 190;
+            principal[3] = imagem3;
+
+            console.log(numero_aleatório);
+            document.body.appendChild(principal[numero_aleatório]); 
+            //document.body.removeChild(principal[numero_aleatório]);
+           }
+           var mostrar=function(){
+            var tentativaNome=prompt("Quem é esse Pokémon?");
+           
+           //essaparte ainda vai ter modificação porque para todos
+           //as opições q nome está certo
+            if(tentativaNome===nomePokemon){
+                alert("Acertou");
+                acertos++
+            }
+            else{
+                alert("errou");
+                erros++;
+            }
+           }
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <!--Alguns arquivos serão criados só para adiantar
+    o andamento da página,mas depois eles serão linkados-->
+    <head>
+        <meta charset="utf-8" name="" >
+        <title>Formulário novidades</title>
+        <link rel="stylesheet" href="feed.css">
+
+    </head>
+
+     <!--Formulário de feedback-->
+    <body>
+        <form class="feedback">
+            <h1>Deixe a sua opinião</h1>
+          
+            <label >NOME :</label>
+            <input type="text" id="nome" placeholder=" cicrano">
+
+            <BR>
+            <br>    
+            <label>EMAIL :</label>
+            <input type="email"  id="email" placeholder="cicrano@gmail.com">
+
+            <br>
+            <br>
+            <label>Deixe o seu comentário</label>
+            <br>
+            <textarea id="comentario" placeholder="deixe a sua opnião">   
+            </textarea>
+            
+            <br>
+            <input type="submit" class="enviar" onclick="enviar()" value="Enviar">
+        </form>
+            <script src="form_feed.js"></script>
+
+    </body>
+</html>

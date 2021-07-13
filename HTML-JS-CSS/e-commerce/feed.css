@@ -1,0 +1,36 @@
+form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px red;
+}
+
+body{
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+   padding: 10px;
+}
+
+.enviar{
+    text-align: left;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;    
+    font-weight: bold;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+    line-height: 20px;
+    max-width: 400px;
+}

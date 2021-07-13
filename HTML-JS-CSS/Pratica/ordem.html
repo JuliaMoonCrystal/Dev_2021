@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Ordem das Funções</title>
+        <STYle>
+            h1 {
+              text-align: center;
+            }
+        </STYle>
+    </head>
+    <body>
+        <h1>Ordem de chamada das funções</h1>
+        <script>
+
+var pri=function(){
+    document.write("--1--");
+    console.log("--1--");
+    segunda();
+    document.write('Depois --1--');
+    console.log("Depois --1--");
+}
+
+var segunda= function(){
+    document.write("--2--");
+    console.log("--2--");
+    Terceira();
+    document.write('Depois --2--');
+    console.log("Depois --2--");
+}
+
+var Terceira=function(){
+     document.write('--3--');
+     console.log("--3--");
+}
+
+pri();
+
+        </script>
+    </body>
+</html>

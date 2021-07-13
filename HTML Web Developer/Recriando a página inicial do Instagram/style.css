@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(243, 243,243);
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(rosas-plano-de-fundo.jpg);
+}
+
+.instagramGraper{
+    display: flex;
+    align-items: center;
+    align-items: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img{
+    height: 50rem;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items:center; /*horizontal*/
+    justify-content:space-around; /* vertical*/
+    flex-direction: column-reverse;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 15;
+    border: 1px solid lightgrey;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.perfil-foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.perfil-foto img{
+    height: 6rem;
+}
+.instagram-login{
+    background-color:royalblue;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    background-color:royalblue;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.not-account{
+    color: gray;
+}
+
+.link-azul{
+    color: blue;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app{
+    color: white;
+}
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url(icone-apple-story.png);
+}
+
+.app-download:nth-child(2) {
+    background-image: url(icone-google-play.png);
+    
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .instagramGraper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: wheat;
+    }
+
+    .instagramGraper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+ 
+    .group {
+        border: 1px solid transparent;
+    }
+}

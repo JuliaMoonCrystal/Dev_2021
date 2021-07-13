@@ -1,0 +1,168 @@
+<!Doctype html>
+    <html>
+        <head>
+            <title>Teste</title>
+        </head>
+        <body>
+            <h1>Teste Tecnico</h1>
+            <script>
+
+        // 1) Implemente um método que crie um novo array baseado nos valores passados.
+        // Entradas do método (3,a), Resultado do método: ['a', 'a', 'a']
+                
+                function metodo1(num, letra){
+                   const array1= [];
+                   
+                   for(var i=0;i<3;i++){
+                       array1[i]=letra;
+                   }
+                   
+                   console.log(array1);
+                   return array1;
+                }
+
+                metodo1(3,'a');
+
+
+         // 2) Implemente um método que inverta um array, não utilize métodos nativos do array.
+         // Entrada do método ([1,2,3,4]), Resultado do método: [4,3,2,1] 
+                
+                function inverter(){
+                  const array2=[1,2,3,4];
+                  const arrayInvertido=[];
+                  const aux=[];
+                  var cont=3;
+
+                  for(var i=3;i>=0;i--){
+                     aux[i]= array2[i];
+                  }
+                  
+                  for(var y=0;y<4;y++){
+                      arrayInvertido[y]=aux[cont];
+                      cont--;
+                  }
+
+                  console.log("Aqui está o array invertido : "+arrayInvertido);
+                  return arrayInvertido;
+                }
+
+                inverter();
+         
+        // 3) Implemente um método que limpe os itens desnecessários de um array (false, undefined, strings vazias, zero, null).
+        // Entrada do método ([1,2,'', undefined]), Resultado do método: [1,2]
+
+           function filtro(){
+             const array3=[1,2,'',undefined];
+             const fil=array3.filter(Number => Number =>1);
+
+             console.log("Array filtrado "+fil);
+            return fil;
+            }
+
+                filtro();
+
+        // 4) Implemente um método que a partir de um array de arrays, converta em um objeto com chave e valor.
+        // Entrada do método ([["c",2],["d",4]]), Resultado do métdodo: {c:2, d:4}    
+
+            function ChaveValor(){
+                const array4= [["c",2],["d",4]];
+                const valor=Object.fromEntries(array4);
+
+                console.log(valor);
+                return valor;
+            }
+
+            ChaveValor();
+
+        // 5) Implemente um método que retorne um array, sem os itens passados por parâmetro depois do array de entrada. 
+        // Entrada do método ([5,4,3,2,5], 5,3), Resultado do método: [4,2]  
+        
+           function metodo5(array5,num1,num2){
+              const array_filtrado=array5.filter(array_filtrado => array_filtrado !== num1 && array_filtrado !== num2);
+            
+              console.log(array_filtrado);
+              return array_filtrado;
+           }
+
+           metodo5([5,4,3,2,5],5,3);
+
+        // 6) Implemente um método que retorne um array, sem valores duplicados.
+        // Entrada do método ([1,2,3,3,2,4,5,4,7,3]), Resultado do método: [1,2,3,4,5,7]
+
+         function repete(arrayRepetido){
+             const arrayNrepetido=[];
+
+             for(unique of arrayRepetido){
+              if( arrayNrepetido.indexOf(unique) === -1){
+                  arrayNrepetido.push(unique);
+              }
+             }
+
+             console.log(arrayNrepetido);
+             return arrayNrepetido;
+         }
+         
+         repete([1,2,3,3,2,4,5,4,7,3]);
+
+        // 7) Implemente um método que compare a igualdade de dois arrays e retorne um valor booleano.
+        // Entrada do método ([1,2,3,4],[1,2,3,4]), Resultado do método: true
+
+        function ArrayIgual(array6, array7){
+            var igual= new Boolean(false);
+            for(var i=0;i<= array6.length;i++){
+                if(array6[i]== array7[i] && array6.length == array7.length){
+                    igual=true;
+                }
+                else{
+                    igual=false
+                    console.log("Os arrays não são iguais "+ igual);
+                    break;       
+                }
+            }
+            console.log(igual);
+            return igual;
+        }
+
+          ArrayIgual([1,2,3,4],[1,2,3,4]);
+
+        // 8) Implemente um método que remova os aninhamentos de um array de arrays para um array unico.
+        // Entrada do método ([1, 2, [3], [4, 5]]), Resultado do método: [1, 2, 3, 4, 5]  
+
+         function metodo8(array9){
+            const aux2=[];
+            const aux=array9.map(Number => aux2.push(Number));
+
+            console.log(aux);
+            return aux;
+         }
+
+         metodo8([1, 2, [3], [4, 5]]);
+
+        // 9) Implemente um método divida um array por uma quantidade passada por parâmetro.
+        // Entrada do método ([1, 2, 3, 4, 5], 2), Resultado do método: [[1, 2], [3, 4], [5]]
+
+        function dividir(array12, num3){
+           const aux=array12.slice(0,num3);
+
+           console.log(aux);
+           return aux;
+        }
+
+        dividir([1, 2, 3, 4, 5], 2);
+        
+        // 10) Implemente um método que encontre os valores comuns entre dois arrays.
+        // Entrada do método ([6, 8], [8, 9]), Resultado do método: [8]
+
+          function metodo10(array10, array11){
+            const aux=array10.filter(Number=> array11.includes(Number));
+            
+              console.log(aux);
+              return aux;
+          }
+
+          metodo10([6, 8], [8, 9]);
+            </script>
+
+        </body>
+    </html>
+</Doctype>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>TABUADA</title>
+        <style>
+           h1{
+               font-family: Arial, Helvetica, sans-serif;
+               text-align: center;
+           }
+           body{
+               background-color: cadetblue;
+               text-align: center;
+               font-family: Arial, Helvetica, sans-serif;
+               font-size: larger;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>TABUADA</h1>
+
+        <script>
+             var pula_linha=function(){
+                 document.write('<br>');
+             }
+
+             var num=prompt("Digite um numero para gerar a tabuada");
+             var cont=1;
+
+             while(cont<=10){
+                 document.write(' ° '+parseInt(num)+' x '+cont+' = '+(cont*num));
+                 pula_linha();
+                 cont++;
+             }
+             pula_linha();
+             document.write('-----------------------------------');
+             pula_linha();
+             pula_linha();
+
+             document.write('Tabuada gerada com o FOR do 1 ao 10');
+             pula_linha();
+             pula_linha();
+
+         //essa segunda tabuada será gerada com o FOR com um valoe já definido
+             var num_for;
+             var contador;
+
+           for(num_for=1;num_for<=10;num_for++){
+             for(contador=1;contador<=10;contador++){
+                document.write(' ° '+num_for+' x '+contador+' = '+(num_for*contador));
+                pula_linha();
+             }
+             pula_linha();
+             document.write('-----------------------------------');
+             pula_linha();
+             pula_linha();
+            }
+
+        </script>
+    </body>
+</html>

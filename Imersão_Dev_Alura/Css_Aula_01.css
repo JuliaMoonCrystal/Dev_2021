@@ -1,0 +1,18 @@
+.container{
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    color: red;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:palegoldenrod;
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
