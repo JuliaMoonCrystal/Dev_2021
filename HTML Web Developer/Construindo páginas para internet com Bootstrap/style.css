@@ -1,12 +1,16 @@
+body{
+    font: 20px Arial,sans-serif;
+}
+
 .navbar {
     background-color:crimson;
 }
 
-.quemsomso{
+.quem-somos{
     background-color: gold;
+    color: rebeccapurple;
 }
 
 .margin{
-   padding-top: 50px;
    padding-bottom: 50px;
 }
