@@ -7,7 +7,7 @@ body{
 }
 
 .quem-somos{
-    background-color: gold;
+    background-color:darkturquoise;
     color: rebeccapurple;
 }
 
@@ -20,18 +20,17 @@ body{
     background-color: lightskyblue;
 }
 
-.col-lg-4{
-
-    margin-left: auto;
-    
-    margin-right: auto;
-    
-    }
+.servicos{
+    background-color:dodgerblue;
+    color: black;
+}
 
 .col-lg-4{
-
-    margin-left: auto;
-        
+    margin-left: auto; 
     margin-right: auto;
-        
-    }
+ }
+
+ .bg-footer{
+    background-color: black;
+    color: goldenrod;
+ }
