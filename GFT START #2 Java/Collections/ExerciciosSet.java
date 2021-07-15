@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -31,7 +32,33 @@ public class ExerciciosSet {
 		System.out.println("\n"+cor);
 		
 		System.out.println("Exiba as cores na ordem inversa da que foi informada");
-		
+		Set<String> coresArcoIris3 = new LinkedHashSet<>(
+                Arrays.asList("violeta", "anil", "azul", "verde", "amarelo", "laranja", "vermelho"));
+        System.out.println("\n"+coresArcoIris3);
+        List<String> coresArcoIrisList = new ArrayList<>(coresArcoIris3);
+        Collections.reverse(coresArcoIrisList);
+        System.out.println(coresArcoIrisList);
+        
+        System.out.println("Exiba todas as cores que começam com a letra ”V”");
+        for (String corArco : cores) {
+			if(corArco.startsWith("V")){
+				System.out.println("\n"+corArco);
+			}
+		}
+        
+        System.out.println("Remova todas as cores que não começam com a letra “V”");
+        
+        Iterator<String> iterator2 = cores.iterator();
+        while (iterator2.hasNext()) {
+            if (iterator2.next().startsWith("V")) iterator2.remove();
+        }
+        System.out.println(cores);
+        
+        System.out.println("Limpe o conjunto");
+        cores.clear();
+        
+        System.out.println("Confira se o conjunto está vazio "+  cores.isEmpty());
+        cores.isEmpty();
 	}	
 
 }
