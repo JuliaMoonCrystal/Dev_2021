@@ -1,6 +1,3 @@
-function load(){
-alert("Bem-vindo ao conversor de números Romanos");
-}
 
 function Inverter(){
     document.getElementById("romano").innerHTML="<b>Digite o número</b>";
