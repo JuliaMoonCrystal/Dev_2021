@@ -1,13 +1,23 @@
 
 function Inverter(){
-    document.getElementById("romano").innerHTML="<b>Digite o número</b>";
+
+    document.getElementById("Romano").innerHTML="<b>Digite o número</b>";
     document.getElementById("convertido").innerHTML="<b>Número Romano:</b>";
+
 }
 
 function Converter(){
     var romano=document.getElementById("romano");
     var aux=romano.value;
-    
+    if (aux === 0) {
+        return '';
+      }
+      for (var i = 0; i < MatrizRomana.length; i++) {
+        if (aux >= MatrizRomana[i][0]) {
+          return MatrizRomana[i][1] + Converter(aux - MatrizRomana[i][0]);
+        }
+      }
+   
 }
   var MatrizRomana=[[1000, 'M'],[900, 'CM'],[500, 'D'],[400, 'CD'],[100, 'C'],[90, 'XC'],[50, 'L'],[40, 'XL'],[10, 'X'],[9, 'IX'],
   [5, 'V'],
@@ -15,15 +25,6 @@ function Converter(){
   [1, 'I']];
 
   /*Testando para ver se a matriz foi populada*/
-  console.log(MatrizRomana);
+  //console.log(MatrizRomana);
 
-  function convertToRoman(num) {
-    if (num === 0) {
-      return '';
-    }
-    for (var i = 0; i < romanMatrix.length; i++) {
-      if (num >= romanMatrix[i][0]) {
-        return romanMatrix[i][1] + convertToRoman(num - romanMatrix[i][0]);
-      }
-    }
-  }
+  
