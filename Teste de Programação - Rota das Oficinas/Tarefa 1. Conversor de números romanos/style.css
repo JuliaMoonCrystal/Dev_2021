@@ -1,0 +1,21 @@
+body{
+    background-color:cornsilk;   
+}
+
+p, h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.botoes{
+   border-radius: 10%;
+}
+
+#NumRomano{
+    width: 20%;
+}
+
+#NumConvertido{
+    width: 20%;
+}
