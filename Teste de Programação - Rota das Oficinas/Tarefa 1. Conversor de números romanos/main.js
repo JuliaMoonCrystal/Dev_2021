@@ -11,11 +11,10 @@ var MatrizRomana=[[1000, 'M'],[900, 'CM'],[500, 'D'],[400, 'CD'],[100, 'C'],[90,
   [4, 'IV'],
   [1, 'I']];
 
-function Converter(){
-    var romano=document.getElementById("romano");
-    var aux=romano.value;
-   // document.getElementById("resultado").innerHTML=aux;
-    /*if (aux === 0) {
+var aux1= document.getElementById();
+
+function ConverterNumPRomano(){
+    if (aux === 0) {
         return '';
       }
       for (var i = 0; i < MatrizRomana.length; i++) {
@@ -23,7 +22,12 @@ function Converter(){
           return MatrizRomana[i][1] + Converter(aux - MatrizRomana[i][0]);
         }
       }
-   */
+}  
+
+function Converter(){
+    var romano=document.getElementById("romano");
+    var aux=romano.value;
+   // document.getElementById("resultado").innerHTML=aux;
 }
 
   /*Testando para ver se a matriz foi populada*/
