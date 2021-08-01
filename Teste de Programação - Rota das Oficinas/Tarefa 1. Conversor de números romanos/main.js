@@ -6,10 +6,16 @@ function Inverter(){
 
 }
 
+var MatrizRomana=[[1000, 'M'],[900, 'CM'],[500, 'D'],[400, 'CD'],[100, 'C'],[90, 'XC'],[50, 'L'],[40, 'XL'],[10, 'X'],[9, 'IX'],
+  [5, 'V'],
+  [4, 'IV'],
+  [1, 'I']];
+
 function Converter(){
     var romano=document.getElementById("romano");
     var aux=romano.value;
-    if (aux === 0) {
+   // document.getElementById("resultado").innerHTML=aux;
+    /*if (aux === 0) {
         return '';
       }
       for (var i = 0; i < MatrizRomana.length; i++) {
@@ -17,12 +23,8 @@ function Converter(){
           return MatrizRomana[i][1] + Converter(aux - MatrizRomana[i][0]);
         }
       }
-   
+   */
 }
-  var MatrizRomana=[[1000, 'M'],[900, 'CM'],[500, 'D'],[400, 'CD'],[100, 'C'],[90, 'XC'],[50, 'L'],[40, 'XL'],[10, 'X'],[9, 'IX'],
-  [5, 'V'],
-  [4, 'IV'],
-  [1, 'I']];
 
   /*Testando para ver se a matriz foi populada*/
   //console.log(MatrizRomana);
