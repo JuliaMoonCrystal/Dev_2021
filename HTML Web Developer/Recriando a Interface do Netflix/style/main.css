@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Elementos principais*/
 body{
   background:var(--preta);
   font-family: 'Times New Roman', Times, serif;
@@ -36,4 +36,12 @@ header nav a{
 
 header nav a:hover{
     color: blue;
+}
+
+/**/
+
+.principal{
+    font-size: 15px;
+    background:url("/img/capa.jpg");
+    height: 400px;
 }
