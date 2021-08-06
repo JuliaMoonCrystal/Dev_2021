@@ -6,11 +6,16 @@ let canvas =document.getElementById("cobra");
 let context =canvas.getContext("2d");
 let box= 32;
 let cobra=[];
+let food={
+   x: Math.floor(Math.random() * 15 + 1)* box,
+   y: Math.floor(Math.random() * 15 +1)* box
+}
 
 cobra[0]={
     x: 8*box,
     y: 8*box
 }
+
 
 let direcao="right";
 let jogo= setInterval(IniciarJogo, 100);
@@ -30,6 +35,11 @@ function CriarCobrinha(){
     }
 }
 
+function drawFood(){
+    context.fillStyle ="Red";
+    context.fillRect(food.x, food.y , box, box);
+}
+
 document.addEventListener('keydown', update);
 
 function update(event){
@@ -47,6 +57,7 @@ function IniciarJogo(){
 
     criarBG();
     CriarCobrinha();
+    drawFood();
 
     let cobrax= cobra[0].x;
     let cobray= cobra[0].y;
