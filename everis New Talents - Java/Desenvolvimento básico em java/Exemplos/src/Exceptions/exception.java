@@ -9,19 +9,29 @@ public class exception {
 	public static void main(String[] args) {
 
 		metodo();
-		metodo2();
+		//metodo2();
+		pegaPlaca();
 	}
 
-	private static void metodo2() {
+private static void pegaPlaca() {
+		 try {
+			CarroVo carro = new CarroVo();
+			carro.getPlaca();
+		} catch (IntegrationException e) {
+       throw new BusinessException("Erro na criação do objeto");
+		}
+	}
+
+/*	private static void metodo2() {
 try {
 	Object con;
 	Object query;
-	PreparedStatement stmt= con.prepareStatement(query);
+	//PreparedStatement stmt= con.prepareStatement(query);
 } catch (SQLException e) {
-    throw new Exception("Problema na criação do Statment", e);
+   // throw new Exception("Problema na criação do Statment", e);
    }		
 	}
-
+*/
 	private static void metodo() {
 
 		try {
