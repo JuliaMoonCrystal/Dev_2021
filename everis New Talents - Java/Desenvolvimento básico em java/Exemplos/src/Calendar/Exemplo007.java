@@ -13,7 +13,7 @@ public class Exemplo007 {
         //Data
         System.out.printf("%tF\n",agora);
 
-        
+
         System.out.printf("%tD\n",agora);
 
         //horas(EUA)
