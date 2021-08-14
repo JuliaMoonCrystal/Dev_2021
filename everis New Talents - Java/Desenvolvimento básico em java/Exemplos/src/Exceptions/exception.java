@@ -6,19 +6,19 @@ import java.sql.SQLException;
 
 public class exception {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		metodo();
 		//metodo2();
 		pegaPlaca();
 	}
 
-private static void pegaPlaca() {
+private static void pegaPlaca() throws Exception {
 		 try {
 			CarroVo carro = new CarroVo();
 			carro.getPlaca();
-		} catch (IntegrationException e) {
-       throw new BusinessException("Erro na criação do objeto");
+		} catch (Exception e) {
+       throw new Exception("Erro na criação do objeto");
 		}
 	}
 
@@ -40,5 +40,4 @@ try {
 		    System.out.println("Arquivo não encontrado");
 		}
 	}
-
 }
