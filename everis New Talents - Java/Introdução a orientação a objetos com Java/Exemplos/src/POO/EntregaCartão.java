@@ -16,11 +16,12 @@ public class EntregaCartão {
 
         Cliente cliente = new Cliente();
         //dados cliente
-        if(cliente.endereco == null){
-            cliente.endereco = new ArrayList<Endereco>();
-        }
-        cliente.adicionarEndereco(endereco);
-        System.out.println("Dados adicionados com sucesso");
 
+        try {
+            cliente.adicionarEndereco(endereco);
+            System.out.println("Endereço adicionado com sucesso");
+        }catch (Exception e){
+            System.out.println("Houve erro ao adicionar "+ e.getMessage());
+        }
     }
 }
