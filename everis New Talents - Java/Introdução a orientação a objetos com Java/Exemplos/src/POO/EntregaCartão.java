@@ -10,6 +10,8 @@ public class EntregaCartão {
 
         Endereco endereco = new Endereco();
         //dados
+         endereco.cep="000000000";
+         endereco.bairro ="Bairro fantasioso";
 
 
         Cliente cliente = new Cliente();
@@ -18,6 +20,7 @@ public class EntregaCartão {
             cliente.endereco = new ArrayList<Endereco>();
         }
         cliente.adicionarEndereco(endereco);
+        System.out.println("Dados adicionados com sucesso");
 
     }
 }

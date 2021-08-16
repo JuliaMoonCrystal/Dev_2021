@@ -15,7 +15,7 @@ public class Cliente {
                throw new NullPointerException("Esse cliente não tem endereço");
           }
           if (endereco.cep ==null
-                  || endereco.bairro ==null){
+                  || endereco.bairro == null){
           throw  new NullPointerException("Não pode ser Null");
           }
           getEndereco().add(endereco);
