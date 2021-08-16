@@ -17,7 +17,7 @@ public class EntregaCartão {
         if(cliente.endereco == null){
             cliente.endereco = new ArrayList<Endereco>();
         }
-        cliente.endereco.add(endereco);
+        cliente.adicionarEndereco(endereco);
 
     }
 }
