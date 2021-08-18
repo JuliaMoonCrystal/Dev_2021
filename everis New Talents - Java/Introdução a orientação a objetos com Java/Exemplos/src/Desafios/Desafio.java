@@ -10,7 +10,7 @@ public class Desafio {
         int valor=scan.nextInt();
         */
         for (int i=1;i<=100;i++){
-            if (i % 3 ==0){
+            if (i % 3 == 0){
                 System.out.println(i+ " é multiplo de 3");
             }
         }
