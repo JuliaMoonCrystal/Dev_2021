@@ -3,11 +3,9 @@ package ExemplosPOO;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
-     public Integer codigo;
-     public String nome;
-     public String cpf;
+public class Cliente extends Pessoa {
 
+     public  String numCartao;
      public List<Endereco> endereco;
 
      public void adicionarEndereco(Endereco endereco){
