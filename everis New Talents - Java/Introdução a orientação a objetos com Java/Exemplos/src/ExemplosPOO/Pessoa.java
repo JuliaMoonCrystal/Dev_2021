@@ -20,16 +20,18 @@ public class Pessoa {
              throw new RuntimeException("Documento não pode ser vazio ou nulo");
         }
         if(documento.length() == Tamanho_cpf){
-            tipo=TipoPessoa.FISICA;
+            //tipo=TipoPessoa.FISICA;
+            setDocumento(documento,tipo =TipoPessoa.FISICA);
         } else if (documento.length() == Tamanho_cnpj){
-            tipo= TipoPessoa.JURIDICA;
+           // tipo= TipoPessoa.JURIDICA;
+            setDocumento(documento,tipo =TipoPessoa.JURIDICA);
         }else {
             throw  new RuntimeException("Tamanho do CPF ou Cnpj inválidos");
         }
-        this.documento = documento;
     }
 
     private void setDocumento(String documento, TipoPessoa tipo) {
-
+        this.documento = documento;
+        this.tipo=tipo;
     }
 }
