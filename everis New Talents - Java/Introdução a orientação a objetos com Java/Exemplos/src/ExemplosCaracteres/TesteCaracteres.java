@@ -14,7 +14,7 @@ public class TesteCaracteres {
         String frase="Bom dia a todos";
         System.out.println(frase);
 
-        frase=frase+2020;//compila porque o java vai reconhecer
+        frase=frase+ 2020;//compila porque o java vai reconhecer
         //0 2020 como string
         System.out.println(frase);
     }
