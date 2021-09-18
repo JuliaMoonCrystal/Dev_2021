@@ -34,13 +34,18 @@ public class LoginApp extends Application{
 		painel.setPrefSize(400, 300);
 		LoginApp.stage=stage;
 		
+		
 		//Colocando os elementos no painel
 
         painel.getChildren().addAll(Login,txtSenha,btnEntrar,btnSair,login,senha);
         
         /*Testando o css*/
-        painel.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, blue 0% red 100%);");
-        
+        //painel.setStyle("-fx-text-fill: green; -fx-font-size: 16px;");
+          painel.setStyle("-fx-background: lightblue;");
+          btnEntrar.setStyle("-fx-color: gold");
+          btnSair.setStyle("-fx-color: gold");
+          
+          
         /*Metodod qua vamos usar*/
         initComponents();
         initListeners();
