@@ -2,6 +2,8 @@ package Telas;
 
 import Model.Produto;
 import javafx.application.Application;
+import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -14,7 +16,7 @@ public class ItemApp extends Application {
      private AnchorPane painelItem;
      private Scene cena;
      private ImageView img;
-     private Label lbPreco,lbProduto;
+     private Label lbPreco,lbDescricao;
      private Button btnAddCarrinho;
      private Stage stage;
      private static Produto produto;
@@ -36,7 +38,7 @@ public class ItemApp extends Application {
 		initComponents();
 		
 		primaryStage.setTitle("Itens");
-	//	primaryStage.setResizable(false);
+		primaryStage.setResizable(false);
 		primaryStage.setScene(cena);
 		primaryStage.show();
 		
@@ -55,25 +57,27 @@ public class ItemApp extends Application {
 		btnAddCarrinho.setStyle("-fx-text-fill: green; -fx-font-size: 16px;");
 		
 		lbPreco = new Label("Preço :");
-		lbProduto = new Label("Descriçao :");
+		lbDescricao = new Label("Descriçao :");
+		
 		
 		lbPreco.setLayoutX(350);
 	    lbPreco.setLayoutY(100);
 	    lbPreco.setStyle("-fx-font-size: 16px;");
+	    
 		
-		lbProduto.setLayoutX(350);
-		lbProduto.setLayoutY(150);
-		lbProduto.setStyle("-fx-font-size: 16px;");
+		lbDescricao.setLayoutX(350);
+		lbDescricao.setLayoutY(150);
+		lbDescricao.setStyle("-fx-font-size: 16px;");
 		
 		
-		img= new ImageView( new Image("https://m.media-amazon.com/images/I/61Ri7L26AQL._AC_SX300_.jpg"));
+		img= new ImageView( new Image(imagens[index]));
 		
 		img.setLayoutX(20);
 		img.setLayoutY(20);
 		
 		
 		
-		painelItem.getChildren().addAll(lbPreco,lbProduto,btnAddCarrinho,img);
+		painelItem.getChildren().addAll(lbPreco,lbDescricao,btnAddCarrinho,img);
 		
 	}
 
@@ -99,6 +103,36 @@ public class ItemApp extends Application {
 
 	public static void setIndex(int index) {
 		ItemApp.index = index;
+	}
+	
+	/*Classe interna da Item*/
+	public class ItensProperty{
+		private SimpleStringProperty produto;
+		private SimpleDoubleProperty preco;
+		
+		public ItensProperty(String produto, double preco) {
+			super();
+			this.produto = new SimpleStringProperty(produto);
+			this.preco = new SimpleDoubleProperty(preco);
+		}
+
+		public String getProduto() {
+			return produto.get();
+		}
+
+		public void setProduto(String produto) {
+			this.produto.set(produto);;
+		}
+
+		public double getPreco() {
+			return preco.get();
+		}
+
+		public void setPreco(double preco) {
+			this.preco.set(preco);;
+		}
+		
+		
 	}
 
 	

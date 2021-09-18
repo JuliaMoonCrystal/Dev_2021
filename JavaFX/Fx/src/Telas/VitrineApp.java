@@ -8,6 +8,8 @@ import Model.Produto;
 import javafx.application.Application;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -87,13 +89,13 @@ public class VitrineApp extends Application {
 		  String novoProduto;
 		  double novoPreco;
 		  
-		  int aux=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite quantos Produtos você quer adicionar:"));
-		  for(int x=0; x< aux;x++){
-			  novoProduto=JOptionPane.showInputDialog(null,"Digite o nome do produto");
-			  novoPreco=Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o nome do produto"));
-			  
-			  vitrine.addProduto(new Produto(novoProduto,novoPreco));
-		  }
+//		  int aux=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite quantos Produtos você quer adicionar:"));
+//		  for(int x=0; x< aux;x++){
+//			  novoProduto=JOptionPane.showInputDialog(null,"Digite o nome do produto");
+//			  novoPreco=Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o nome do produto"));
+//			  
+//			  vitrine.addProduto(new Produto(novoProduto,novoPreco));
+//		  }
 		for (Produto p: vitrine.getProdutos()) {
 			listaItens.add(new ItensProperty(p.getProduto(), p.getPreco()));
 		}
@@ -120,6 +122,24 @@ public class VitrineApp extends Application {
 				}
 				else{
 					tbVitrine.setItems(listaItens);
+				}
+				
+			}
+		});
+		
+		tbVitrine.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ItensProperty>() {
+
+			@Override
+			public void changed(ObservableValue<? extends ItensProperty> value, ItensProperty oldItem,
+					ItensProperty newItem) {
+				ItemApp.setProduto(new Produto(newItem.getProduto(),newItem.getPreco()));//arrumar valores não aparecendo na tela
+				ItemApp.setIndex(tbVitrine.getSelectionModel().getSelectedIndex());
+				
+				
+				try{
+					new ItemApp().start(new Stage());
+				}catch (Exception e) {
+					e.printStackTrace();
 				}
 				
 			}
