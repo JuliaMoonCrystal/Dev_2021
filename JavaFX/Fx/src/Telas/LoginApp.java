@@ -14,7 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class Login extends Application{
+public class LoginApp extends Application{
   private	TextField Login = new TextField();
   private   PasswordField txtSenha = new PasswordField();
   private	Button btnEntrar = new Button("Entrar");
@@ -23,6 +23,7 @@ public class Login extends Application{
   private	Scene cena = new Scene(painel);
   private   Label login = new Label("Login");
   private   Label senha = new Label("Senha");
+  private static Stage stage;
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -31,6 +32,7 @@ public class Login extends Application{
 	@Override
 	public void start(Stage stage) throws Exception {
 		painel.setPrefSize(400, 300);
+		LoginApp.stage=stage;
 		
 		//Colocando os elementos no painel
 
@@ -97,13 +99,25 @@ public class Login extends Application{
 	   }
 
 	protected void logar() {
-		if(Login.getText().equals("admin") && Login.getText().equals("123456")){
+		if(Login.getText().equals("admin") && txtSenha.getText().equals("123")){
+			
+			try{
+				new VitrineApp().start( new Stage());
+				LoginApp.getStage().close();
+				
+			}catch(Exception e){
+				e.printStackTrace();
+			}
 			JOptionPane.showMessageDialog(null, "Implenmentando");
 		}
 		else{
 			JOptionPane.showMessageDialog(null, "Login ou senha inválidos","erro", JOptionPane.ERROR_MESSAGE);
 		}
 		
+	}
+
+	private static Stage getStage() {
+		return stage;
 	}
 
 	protected void fecharApp() {
