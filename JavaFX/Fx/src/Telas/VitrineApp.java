@@ -88,14 +88,12 @@ public class VitrineApp extends Application {
 		  double novoPreco;
 		  
 		  int aux=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite quantos Produtos você quer adicionar:"));
-		  for(int x=0; x<= aux;x++){
+		  for(int x=0; x< aux;x++){
 			  novoProduto=JOptionPane.showInputDialog(null,"Digite o nome do produto");
 			  novoPreco=Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o nome do produto"));
 			  
 			  vitrine.addProduto(new Produto(novoProduto,novoPreco));
 		  }
-		
-		
 		for (Produto p: vitrine.getProdutos()) {
 			listaItens.add(new ItensProperty(p.getProduto(), p.getPreco()));
 		}
