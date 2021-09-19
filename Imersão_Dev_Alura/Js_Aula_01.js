@@ -1,12 +1,13 @@
-var BotaoClicado=function(){
-    var valorDolar =1.39;
-     
-    var Libra=parseFloat(document.getElementById("Libra"));
-   
-    
+var nome = "Julia"
 
- }
+var notaDoPrimeiroBimestre = 9
+var notaDoSegundoBimestre = 7
+var notaDoTerceiroBimestre = 4
+var notaDoQuartoBimestre = 2 
 
- var BotaoAdi= document.getElementById("converter");
- BotaoAdi.onclick=BotaoClicado;
+var notaFinal = (notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiroBimestre + notaDoQuartoBimestre) / 4
 
+var notaFixada = notaFinal.toFixed(1)
+
+console.log("Bem vindo " + nome)
+console.log(notaFixada)
