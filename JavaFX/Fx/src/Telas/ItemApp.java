@@ -4,6 +4,8 @@ import Model.Produto;
 import javafx.application.Application;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -18,7 +20,7 @@ public class ItemApp extends Application {
      private ImageView img;
      private Label lbPreco,lbDescricao;
      private Button btnAddCarrinho;
-     private Stage stage;
+     private static Stage stage;
      private static Produto produto;
      private static int index;
      private static String [] imagens ={"https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/"
@@ -59,12 +61,10 @@ public class ItemApp extends Application {
 		lbPreco = new Label("Preço :");
 		lbDescricao = new Label("Descriçao :");
 		
-		
 		lbPreco.setLayoutX(350);
 	    lbPreco.setLayoutY(100);
 	    lbPreco.setStyle("-fx-font-size: 16px;");
 	    
-		
 		lbDescricao.setLayoutX(350);
 		lbDescricao.setLayoutY(150);
 		lbDescricao.setStyle("-fx-font-size: 16px;");
@@ -75,18 +75,32 @@ public class ItemApp extends Application {
 		img.setLayoutX(20);
 		img.setLayoutY(20);
 		
-		
-		
 		painelItem.getChildren().addAll(lbPreco,lbDescricao,btnAddCarrinho,img);
 		
 	}
+	
+	public void initListenes(){
+		btnAddCarrinho.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@Override
+			public void handle(ActionEvent event) {
+				VitrineApp.getCarrinho().addProduto(produto);
+				try{
+					new CarrinhoApp().start(new Stage());
+				}catch(Exception e){
+					e.printStackTrace();
+				}
+				
+			}
+		});
+	}
 
-	public Stage getStage() {
-		return stage;
+	public static Stage getStage() {
+		return gettage();
 	}
 
 	public void setStage(Stage stage) {
-		this.stage = stage;
+		this.settage(stage);
 	}
 
 	public static Produto getProduto() {
@@ -105,6 +119,14 @@ public class ItemApp extends Application {
 		ItemApp.index = index;
 	}
 	
+	public static Stage gettage() {
+		return stage;
+	}
+
+	public static void settage(Stage stage) {
+		ItemApp.stage = stage;
+	}
+
 	/*Classe interna da Item*/
 	public class ItensProperty{
 		private SimpleStringProperty produto;
