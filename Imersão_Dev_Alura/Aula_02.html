@@ -11,15 +11,9 @@
         <style>
             body{
                 text-align: center;
-                background-color: rosybrown;
+                background-image: url(Lendários.png);
             }
-
-            img{
-              height: 30;
-              width: 50;
-              border-radius: 30px;
-
-            }
+            
            button{
                padding: 10px;
                border: 10px;
@@ -28,6 +22,10 @@
                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                font-size: large;
                color: red;
+           }
+
+           h1{
+               font-size: 30;
            }
 
         </style>
@@ -44,13 +42,14 @@
         <br>
       -->
         
+        <button onclick="sortear()">Sortear Pokémon</button>
+        
+        <button onclick="removerImagem()">Remover imagem</button>
+       
         <button onclick="mostrar()">Adivinhar nome do Pokémon</button>
         <br>
         <br>
         
-        <button onclick="sortear()">Sortear Pokémon</button>
-        <br>
-        <br>
 
         <script>
            
@@ -63,19 +62,14 @@
            var nomePokemon1="Suikune"
            var nomePokemon2="Dragonite"
            var nomePokemon3="Raiku"
-
-           var sortear=function(){ 
-            
-            //esse variavel serve para gerar um numero aleatório
-           //que vai garantir as imagens aleatórias
-            var numero_aleatório=Math.round(Math.random()*3);
-            
+ 
             var principal = new Array();
             var imagem = new Image();
             var imagem1=new Image();
             var imagem2=new Image();
             var imagem3=new Image();
-            
+            var aux;
+
             imagem.src = "pikachu.png";
             imagem.width = 200;
             imagem.height = 190;
@@ -97,23 +91,34 @@
             imagem3.height = 190;
             principal[3] = imagem3;
 
+           var sortear=function(){ 
+         
+           
+           //esse variavel serve para gerar um numero aleatório
+           //que vai garantir as imagens aleatórias
+            var numero_aleatório=Math.round(Math.random()*3);
+
+            aux=numero_aleatório;
             console.log(numero_aleatório);
             document.body.appendChild(principal[numero_aleatório]); 
-            //document.body.removeChild(principal[numero_aleatório]);
            }
+
            var mostrar=function(){
-            var tentativaNome=prompt("Quem é esse Pokémon?");
-           
-           //essaparte ainda vai ter modificação porque para todos
-           //as opições q nome está certo
-            if(tentativaNome===nomePokemon){
+           var tentativaNome=prompt("Quem é esse Pokémon?");
+          
+            if(tentativaNome===nomePokemon || tentativaNome === nomePokemon1 || tentativaNome === nomePokemon2 || tentativaNome === nomePokemon3){
                 alert("Acertou");
                 acertos++
             }
-            else{
+             else{
                 alert("errou");
                 erros++;
-            }
+             }
+           }
+
+           var removerImagem= function(){
+              // alert('Função FUNCIONANDO');
+            document.body.removeChild(principal[aux]); 
            }
            
         </script>
