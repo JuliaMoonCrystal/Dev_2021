@@ -45,10 +45,22 @@ public class Principal {
 			case 2:
 				listarLocais(votacao);
 				break;
+				
+			case 3:
+				listarCandidatod(candidatos);
+				break;
 
 			}
 		} while (opc != 9);
 
+	}
+
+	private static void listarCandidatod(List<Candidato> candidatos) {
+		 System.out.println("-----------------------------------------------------------------");
+			for (Candidato rodar : candidatos) {
+				System.out.println(rodar.toString());
+			}
+			System.out.println("-----------------------------------------------------------------");
 	}
 
 	private static void listarLocais(List<Votacao> votacao) {
