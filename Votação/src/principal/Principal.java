@@ -42,9 +42,21 @@ public class Principal {
 				Votar(candidatos, votacao);
 				break;
 
+			case 2:
+				listarLocais(votacao);
+				break;
+
 			}
 		} while (opc != 9);
 
+	}
+
+	private static void listarLocais(List<Votacao> votacao) {
+        System.out.println("-----------------------------------------------------------------");
+		for (Votacao votacao2 : votacao) {
+			System.out.println("\nNumero da Seção:"+votacao2.getNumeroSecao()+" Localizaçãp :"+votacao2.getLocalizacao());
+		}
+		System.out.println("-----------------------------------------------------------------");
 	}
 
 	private static void Votar(List<Candidato> candidatos, List<Votacao> votacao) throws IOException {
@@ -62,8 +74,8 @@ public class Principal {
 
 		for (Candidato rodar : candidatos) {
 			if (rodar.getNumCandidato() == votos) {
-				rodar.setVotos(rodar.getVotos()+1);
-				writer.write("O candidato :" + rodar.getNome() + " Teve um total de :" + rodar.getVotos()+" Votos");
+				rodar.setVotos(rodar.getVotos() + 1);
+				writer.write("O candidato :" + rodar.getNome() + " Teve um total de :" + rodar.getVotos() + " Votos");
 			}
 			writer.newLine();
 		}
