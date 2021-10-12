@@ -1,18 +1,24 @@
 package principal;
 
+import java.awt.HeadlessException;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 import Entidades.Candidato;
 import Entidades.Votacao;
 
 public class Principal {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		// instanciação das classes
 		List<Candidato> candidatos = new ArrayList<>();
 		List<Votacao> votacao = new ArrayList<>();
@@ -45,28 +51,72 @@ public class Principal {
 			case 2:
 				listarLocais(votacao);
 				break;
-				
+
 			case 3:
-				listarCandidatod(candidatos);
+				listarCandidatos(candidatos);
 				break;
+
+			case 4:
+				pesquisarLocais(votacao);
+				break;
+				
+			case 5:
+				pesquisarCandidatos(candidatos);
+				break;
+				
+			case 0:
+				System.out.println("\nOpção indisponivel!!!");
+				break;
+
 
 			}
 		} while (opc != 9);
 
 	}
 
-	private static void listarCandidatod(List<Candidato> candidatos) {
-		 System.out.println("-----------------------------------------------------------------");
-			for (Candidato rodar : candidatos) {
-				System.out.println(rodar.toString());
+	private static void pesquisarCandidatos(List<Candidato> candidatos) {
+		Scanner scaner = new Scanner(System.in);
+		System.out.println("\nDigite o nome do candidato : ");
+		String nome_can = scaner.nextLine();
+		
+		for (Candidato rodar : candidatos) {
+			if(rodar.getNome().equals(nome_can)){
+				System.out.println("\nO candidato esta disponivel para votação!!!");
 			}
-			System.out.println("-----------------------------------------------------------------");
+			else{
+				System.out.println("\nO candidato não esta disponivel para votação!!!");
+			}
+		}	
+	}
+
+	private static void pesquisarLocais(List<Votacao> votacao) throws Exception, IOException {
+		
+		Scanner scaner = new Scanner(System.in);
+		System.out.println("\nDigite o local da votação : ");
+		String nome_local = scaner.nextLine();
+		
+		for (Votacao votacao2 : votacao) {
+			if(votacao2.getLocalizacao().equals(nome_local)){
+				System.out.println("\nO local esta disponivel para votação!!!");
+			}
+			
+		}	
+		System.out.println("\nO local não esta disponivel para votação!!!");
+	}
+
+	private static void listarCandidatos(List<Candidato> candidatos) {
+		System.out.println("-----------------------------------------------------------------");
+		for (Candidato rodar : candidatos) {
+			System.out.println(rodar.toString());
+		}
+		System.out.println("-----------------------------------------------------------------");
 	}
 
 	private static void listarLocais(List<Votacao> votacao) {
-        System.out.println("-----------------------------------------------------------------");
+		System.out.println("-----------------------------------------------------------------");
 		for (Votacao votacao2 : votacao) {
-			System.out.println("\nNumero da Seção:"+votacao2.getNumeroSecao()+" Localizaçãp :"+votacao2.getLocalizacao());
+			System.out.println(
+					"\nNumero da Seção:" + votacao2.getNumeroSecao() + " Localização :" + votacao2.getLocalizacao());
 		}
 		System.out.println("-----------------------------------------------------------------");
 	}
