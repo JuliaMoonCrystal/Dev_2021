@@ -1,0 +1,50 @@
+
+Nome do candidato:José das Graças
+Cargo : Deputado
+Número do candidato : 1
+Nome do partido :Partito Partido
+
+Nome do candidato:Marias das Graças
+Cargo : Deputada
+Número do candidato : 2
+Nome do partido :Partito Par
+
+Nome do candidato:Allan da Silva
+Cargo : Prefeito
+Número do candidato : 3
+Nome do partido :Partito Impar
+
+Nome do candidato:Alana Ferreira
+Cargo : Prefeita
+Número do candidato : 4
+Nome do partido :Partito Monoromatico
+
+Nome do candidato:Thadeu Oliveira
+Cargo : Governadora
+Número do candidato : 5
+Nome do partido :Partito heterocromatico
+
+Nome do candidato:Jhonatas Oliver
+Cargo : Governador
+Número do candidato : 6
+Nome do partido :Partito Par
+
+Nome do candidato:Joseph Joestar
+Cargo : Presidente
+Número do candidato : 7
+Nome do partido :Partito Impar
+
+Nome do candidato:Jotaro kujo
+Cargo : Presidente
+Número do candidato : 8
+Nome do partido :Partito Monocromatico
+
+Nome do candidato:Jonathan Hooly
+Cargo : Deputado
+Número do candidato : 9
+Nome do partido :Partito Heterocromatico
+
+Nome do candidato:Master Piece
+Cargo : Deputada
+Número do candidato : 10
+Nome do partido :Partito Partido

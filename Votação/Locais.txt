@@ -1,0 +1,10 @@
+
+Número da seção :12345 Localização :Escola Estadual Jardin-Zona leste
+
+Número da seção :54321 Localização :Escola Estadual Fernandes-Zona norte
+
+Número da seção :67890 Localização :Escola Estadual Esperança-Zona oeste
+
+Número da seção :19876 Localização :Escola Estadual Olinda-Zona sudeste
+
+Número da seção :91827 Localização :Escola Estadual Horizonte-Zona sul

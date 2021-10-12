@@ -82,11 +82,9 @@ public class Principal {
 		for (Candidato rodar : candidatos) {
 			if(rodar.getNome().equals(nome_can)){
 				System.out.println("\nO candidato esta disponivel para votação!!!");
-			}
-			else{
-				System.out.println("\nO candidato não esta disponivel para votação!!!");
-			}
+			}		
 		}	
+		System.out.println("\nO candidato não esta disponivel para votação!!!");
 	}
 
 	private static void pesquisarLocais(List<Votacao> votacao) throws Exception, IOException {
@@ -107,7 +105,8 @@ public class Principal {
 	private static void listarCandidatos(List<Candidato> candidatos) {
 		System.out.println("-----------------------------------------------------------------");
 		for (Candidato rodar : candidatos) {
-			System.out.println(rodar.toString());
+			System.out.println("\nNome :"+rodar.getNome()+"\nCargo: "+rodar.getCargo()+"\nNumero do candidato: "+rodar.getNumCandidato()
+			+"\nNome do partido :"+rodar.getNomePartido()+"Quantidade de votos: "+rodar.getVotos());
 		}
 		System.out.println("-----------------------------------------------------------------");
 	}
