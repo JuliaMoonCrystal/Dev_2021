@@ -2,12 +2,11 @@ package Telas;
 
 import javax.swing.JOptionPane;
 
-import com.sun.media.jfxmediaimpl.platform.Platform;
-
 import Controller.Carrinho;
 import Model.Produto;
 import Telas.VitrineApp.ItensProperty;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.ObservableList;
