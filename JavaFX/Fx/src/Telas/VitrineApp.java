@@ -1,5 +1,7 @@
 package Telas;
 
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 import Controller.Carrinho;
@@ -88,11 +90,17 @@ public class VitrineApp extends Application {
 		
 		  String novoProduto;
 		  double novoPreco;
+		  Scanner scan = new Scanner(System.in); 
 		  
-//		  int aux=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite quantos Produtos você quer adicionar:"));
-//		  for(int x=0; x< aux;x++){
-//			  novoProduto=JOptionPane.showInputDialog(null,"Digite o nome do produto");
-//			  novoPreco=Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o nome do produto"));
+//		  System.out.println("\nDigite quantos produtos você quer adicionar: ");
+//		  int aux= scan.nextInt();
+//		 		  for(int x=0; x< aux;x++){
+//		 	  System.out.println("-------------------------------");
+//		 	  System.out.println("\nDigite o nome do produto :");
+//			  novoProduto=scan.nextLine();
+//			  
+//			  System.out.println("\nDigite o preço do produto :");
+//			  novoPreco=scan.nextDouble();
 //			  
 //			  vitrine.addProduto(new Produto(novoProduto,novoPreco));
 //		  }
@@ -135,7 +143,6 @@ public class VitrineApp extends Application {
 				ItemApp.setProduto(new Produto(newItem.getProduto(),newItem.getPreco()));//arrumar valores não aparecendo na tela
 				ItemApp.setIndex(tbVitrine.getSelectionModel().getSelectedIndex());
 				
-				
 				try{
 					new ItemApp().start(new Stage());
 				}catch (Exception e) {
@@ -145,7 +152,6 @@ public class VitrineApp extends Application {
 			}
 		});
 	}
-	
 	
 	/*Classe interna da Vitrine*/
 	public class ItensProperty{
@@ -173,8 +179,6 @@ public class VitrineApp extends Application {
 		public void setPreco(double preco) {
 			this.preco.set(preco);;
 		}
-		
-		
 	}
 
 

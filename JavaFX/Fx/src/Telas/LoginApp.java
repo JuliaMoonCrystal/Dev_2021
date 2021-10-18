@@ -1,6 +1,5 @@
 package Telas;
 
-
 import javax.swing.JOptionPane;
 
 import javafx.application.Application;
@@ -46,7 +45,7 @@ public class LoginApp extends Application{
           btnSair.setStyle("-fx-color: gold");
           
           
-        /*Metodod qua vamos usar*/
+        /*Metodos que vamos usar*/
         initComponents();
         initListeners();
         
@@ -58,8 +57,8 @@ public class LoginApp extends Application{
 			
 		}
 	   private void initComponents(){
-		    //Login.setText("Digite o seu login");
-			//txtSenha.setText("Digite a sua senha");
+		    Login.setText("Digite o seu login :");
+			txtSenha.setText("Digite a sua senha :");
 			
 			/*Colocando os elementos em determinadas posições*/
 			Login.setLayoutX(130);
@@ -113,7 +112,6 @@ public class LoginApp extends Application{
 			}catch(Exception e){
 				e.printStackTrace();
 			}
-			JOptionPane.showMessageDialog(null, "Implenmentando");
 		}
 		else{
 			JOptionPane.showMessageDialog(null, "Login ou senha inválidos","erro", JOptionPane.ERROR_MESSAGE);
