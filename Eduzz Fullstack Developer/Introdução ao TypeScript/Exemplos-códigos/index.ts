@@ -12,12 +12,11 @@ function soma(a, b){
 
 //types
 
-interface Canino extends Animal{
-    porte : 'pequeno' | 'médio' |' grande'
+interface Canino extends Animal {
+    porte: 'pequeno' | 'médio' | ' grande'
 }
 
-type Domestico =Felinos |Canino;
-
+type Domestico = Felinos | Canino;
 
 //interfaces
 
@@ -25,7 +24,7 @@ interface Animal {
     nome: string;
     tipo: 'terrestre' | 'aquatico';
     som(som: string): void;
-    domestico : boolean;
+    domestico: boolean;
 }
 
 interface Felinos extends Animal {
@@ -36,7 +35,7 @@ const animal: Animal = {  /* --> Domestico */
     nome: 'Elefante',
     tipo: 'terrestre',
     som: (som) => (`${som}`),
-    domestico : false
+    domestico: false
 }
 
 const felino: Felinos = {
@@ -44,8 +43,12 @@ const felino: Felinos = {
     tipo: 'terrestre',
     visaoNoturna: true,
     som: (som) => (`${som}`),
-    domestico : false
+    domestico: false
 }
-
-
 console.log('O animal' + animal.nome + ' é do tipo ' + animal.tipo);
+
+const input = document.getElementById('input') as HTMLInputElement;
+input.addEventListener('input', (event) => {
+    const i = event.currentTarget as HTMLInputElement;
+    console.log(i.value);
+})
