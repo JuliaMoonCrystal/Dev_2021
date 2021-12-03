@@ -1,0 +1,23 @@
+O que é uma variavel
+-é um espaço na memoria do computador, onde se pode guardar valores
+-------------------------
+Instancia:objeto
+Classe:classe
+Local: dentro de métodos
+Parametros: na assinatura do metodo
+
+padrão Java-fortemente tipada
+
+<Visibilidade> <modificador> nomeVariavel= <valorInicial>
+
+-Não começar com números
+-Evitar caracteres especiais
+-São case-sensitive
+-Sem espaço
+-Não pode usar palavra reservada
+
+-Boas práticas
+-Sempre começar com letra minuscula
+-nomes expressivos
+-nome camelo
+-nomes compostos separados com _ e inicia com letra maiuscula
