@@ -32,3 +32,13 @@ Textual: String,char
 Numerico:int ,double,byte,short,long,float
 Lógico: boolean
 Objeto:
+
+Operadores lógicos
+-São simbolo especiais quais são capazes de realizar ações especificas em um,dois ou três operadores.
+-pós-fixado: y++ ou y--
+-prefixado: ++x, --x
+-aritmético:+,-,*,/,%
+-atribuição:=,++,-=,*=,/=
+
+
+
