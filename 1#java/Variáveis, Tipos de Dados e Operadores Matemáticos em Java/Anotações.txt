@@ -21,3 +21,14 @@ padrão Java-fortemente tipada
 -nomes expressivos
 -nome camelo
 -nomes compostos separados com _ e inicia com letra maiuscula
+
+Tipos das variaveis
+-São valores e consequentemente operações que as váriaveis podem assumir e sofrer,respsctivamente.
+
+-Estatica(forte) x Dinâmica(fraca)
+-Promitivo vs Composto
+
+Textual: String,char
+Numerico:int ,double,byte,short,long,float
+Lógico: boolean
+Objeto:
