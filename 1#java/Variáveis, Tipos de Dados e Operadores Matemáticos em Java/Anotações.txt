@@ -40,5 +40,11 @@ Operadores lógicos
 -aritmético:+,-,*,/,%
 -atribuição:=,++,-=,*=,/=
 
+Conceituação
+-é a trasnformação de uma determinada variável de tipos menos especificos para um tipo mais especifico.
+Upcast(implicito)
+-Promoção de um tipo de dado com menor capacidade de armazenamento, para um dado maior
 
+DownCast(expicito)
+-Promoção de um tipo de dado com maior capacidade de armazenamento, para um dado menor
 
