@@ -25,4 +25,10 @@ São responsaveis por definir e realizar um determinado comprtamento.
 -notação camelo
 -deve possuir entre 80 e 120 linhas
 -evite lista de parâmetros longas
--visibilidade adequada     
+-visibilidade adequada
+
+##Sobrecarga
+É a capacidade de definir métodos para diferentes contextos,mas preservando seu nome.(alterar a assinatura do método)
+
+A sobrescrita de métodos seria criar um novo método na classe filha contendo a mesma assinatura e mesmo tipo de retorno do método sobrescrito. (Override).
+Ja o sobrecarga, ele no caso seria, o que permite métodos de mesmo nome, mas com suas assinaturas diferentes, ex argumentos diferentes.
