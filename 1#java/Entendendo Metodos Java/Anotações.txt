@@ -4,3 +4,25 @@ São responsaveis por definir e realizar um determinado comprtamento.
 ## Padão de definição
 -- <visibilidade><tipo><modificador> retorno nomeDoMetodo(parâmetros)<exceções>corpo
 
+##Assinatura é a forma de identificar unicamente o método
+ Ass= nome +parâmetros
+
+ ##Construtor e Desconstrutor são métodos especiais usados na Orientação a Objetos
+ ##Mensagem é o ato de solicitar ao método que o mesmo execute.Esta pode ser direcionadoa um objeto ou uma classe
+
+ O parâmetros podem ser passados por valor ou por referência.
+
+ ##valor
+ int i= 10;
+ public void fazerAlgo(int i){
+     i+=10;
+     System.out.printLn("Valor de i dentro do metodo é : "+i);
+ }
+     System.out.printLn("Valor de i fora do metodo é : "+i);
+
+##Boas práticas
+-nomes devem ser descritivos
+-notação camelo
+-deve possuir entre 80 e 120 linhas
+-evite lista de parâmetros longas
+-visibilidade adequada     
