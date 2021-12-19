@@ -1,0 +1,9 @@
+body{
+    background-color: whitesmoke;
+}
+
+#container{
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+}

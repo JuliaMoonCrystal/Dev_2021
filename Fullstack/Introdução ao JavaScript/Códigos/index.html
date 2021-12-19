@@ -4,9 +4,17 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css" />    
      <title>Prática Javascript</title>
  </head>
  <body>
+     <h1 id="h1" onmouseover="troca();" onmouseout="volta();">Testando o javascript</h1>
+     <div id="container">
+         <h1>Contador Javascript</h1>
+         <button name="subtrair" onclick="decrement();"> - </button>
+         <span id="currentNumber">0</span>
+         <button name="adicionar" onclick="increment();"> - </button>
+     </div>
      <script src="Main.js"></script>
  </body>
  </html>
